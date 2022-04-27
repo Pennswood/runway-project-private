@@ -1,0 +1,10 @@
+build-essential
+git
+libsm6
+libxext6
+parallel
+sudo
+tree
+tzdata
+wget
+zip

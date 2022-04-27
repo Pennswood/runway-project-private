@@ -1,0 +1,3722 @@
+[
+  {
+    "values": {
+      "airport_config": [
+        "D_26L_27R_A_26R_27L_28",
+        "D_8R_9L_A_10_8L_9R",
+        "D_8R_9L_A_10_8L_9R",
+        "D_8R_9L_A_10_8L_9R",
+        "D_26L_27R_A_26R_27L_28",
+        "D_26L_27R_A_26R_27L_28",
+        "D_8R_9L_A_10_8L_9R",
+        "D_8R_9L_A_10_8L_9R",
+        "D_8R_9L_A_10_8L_9R",
+        "D_26L_27R_A_26R_27L_28"
+      ]
+    },
+    "relative_path": "katl/katl_airport_config.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SWA1012.DEN.ATL.201030.2323.0106.TFM",
+        "DAL1077.MSP.ATL.201030.2243.0043.TFM",
+        "DAL1254.DFW.ATL.201030.2204.0027.TFM",
+        "DAL1100.PHX.ATL.201030.2138.0065.TFM",
+        "CLX47S.LUX.ATL.201031.1911.0002.TFM",
+        "GEC8174.FRA.ATL.201031.1624.0030.TFM",
+        "DAL346.LAX.ATL.201030.2024.0014.TFM",
+        "DAL1077.MSP.ATL.201030.2243.0043.TFM",
+        "FFT1511.LGA.ATL.201030.2144.0048.TFM",
+        "DAL2422.MCO.ATL.201030.2318.0020.TFM"
+      ],
+      "estimated_runway_arrival_time": [
+        "2020-11-01T00:48:24",
+        "2020-11-01T01:44:41",
+        "2020-11-01T01:03:22",
+        "2020-11-01T01:12:25",
+        "2020-11-01T00:48:44",
+        "2020-11-01T00:22:31",
+        "2020-11-01T00:31:57",
+        "2020-11-01T01:43:41",
+        "2020-11-01T04:33:37",
+        "2020-11-01T01:08:18"
+      ]
+    },
+    "relative_path": "katl/katl_tfm_estimated_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "DAL82.ATL.CDG.201031.2238.0099.TFM",
+        "DAL1639.ATL.JAN.201031.2003.0063.TFM",
+        "DAL459.ATL.DCA.201031.1458.0100.TFM",
+        "EDV5297.ATL.CHO.201031.1738.0041.TFM",
+        "EDV5030.ATL.FWA.201101.0128.0027.TFM",
+        "DAL345.ATL.LAX.201101.1258.0042.TFM",
+        "DAL8905.ATL.SBN.201031.0029.0023.TFM",
+        "DAL1335.ATL.MKE.201101.0218.0055.TFM",
+        "DAL1633.ATL.DAB.201101.0153.0112.TFM",
+        "DAL1629.ATL.SDF.201031.2253.0097.TFM"
+      ],
+      "departure_runway": [
+        "09L",
+        "26L",
+        "27R",
+        "26L",
+        "27R",
+        "09L",
+        "26L",
+        "26L",
+        "26L",
+        "26L"
+      ]
+    },
+    "relative_path": "katl/katl_departure_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "EDV4712.ATL.TYS.201031.0054.0003.TFM",
+        "DAL1413.ATL.GRR.201031.0104.0009.TFM",
+        "DAL426.ATL.JFK.201031.0154.0013.TFM",
+        "EDV4638.ATL.GPT.201031.0039.0025.TFM",
+        "DAL1777.ATL.GSP.201031.0114.0008.TFM",
+        "DAL1620.ATL.CVG.201031.0154.0008.TFM",
+        "DAL1637.ATL.SDF.201031.0159.0005.TFM",
+        "DAL1592.ATL.MLB.201031.0029.0027.TFM",
+        "EDV4638.ATL.GPT.201101.0133.0038.TFM",
+        "DAL1565.ATL.SRQ.201031.0054.0002.TFM"
+      ],
+      "estimated_runway_departure_time": [
+        "2020-10-31 23:28:00",
+        "2020-11-01 01:28:00",
+        "2020-11-01 00:56:00",
+        "2020-11-01 01:02:00",
+        "2020-11-01 00:03:00",
+        "2020-11-01 00:49:00",
+        "2020-11-01 01:26:00",
+        "2020-11-01 02:21:00",
+        "2020-11-01 00:01:00",
+        "2020-11-01 01:01:00"
+      ]
+    },
+    "relative_path": "katl/katl_etd.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "DAL2135.BDL.ATL.201230.1556.0100.TFM",
+        "DAL1481.ATL.DAB.201230.1641.0119.TFM",
+        "DAL2135.BDL.ATL.201230.1556.0100.TFM",
+        "EDV4954.ATL.VPS.201230.2021.0021.TFM",
+        "DAL1404.FLL.ATL.201230.1611.0031.TFM",
+        "DAL1830.ATL.GUA.201230.1446.0078.TFM",
+        "DAL368.ATL.LAX.201230.1156.0147.TFM",
+        "JIA5224.ATL.CLT.201230.1856.0037.TFM",
+        "SWA3254.AUS.ATL.201230.1936.0067.TFM",
+        "EDV5040.ATL.AVL.201230.1856.0047.TFM"
+      ]
+    },
+    "relative_path": "katl/katl_mfs_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "NKS1076.FLL.ATL.201230.1056.0099.TFM",
+        "DAL858.ATL.SLC.201230.1516.0093.TFM",
+        "DAL1820.LIR.ATL.201230.2006.0044.TFM",
+        "DAL2312.ATL.SRQ.201230.2126.0085.TFM",
+        "SWA3121.ATL.MDW.201230.2236.0035.TFM",
+        "DAL2358.ECP.ATL.201230.1156.0161.TFM",
+        "DAL1639.MIA.ATL.201230.1811.0064.TFM",
+        "DAL861.ATL.PHX.201230.1441.0082.TFM",
+        "DAL1929.ATL.STT.201230.1756.0145.TFM",
+        "DAL1337.PHX.ATL.201230.1826.0067.TFM"
+      ]
+    },
+    "relative_path": "katl/katl_mfs_stand_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SWA2416.BWI.ATL.201031.2008.0085.TFM",
+        "DAL75.AMS.ATL.201101.1228.0038.TFM",
+        "DAL387.BOS.ATL.201031.1218.0027.TFM",
+        "EDV5026.AVL.ATL.201031.1324.0008.TFM",
+        "DAL1557.RDU.ATL.201031.1719.0021.TFM",
+        "DAL1704.VPS.ATL.201031.2048.0058.TFM",
+        "DAL1247.DFW.ATL.201101.1223.0044.TFM",
+        "DAL1360.ORD.ATL.201031.2253.0131.TFM",
+        "DAL1764.SAV.ATL.201031.1103.0016.TFM",
+        "SWA2231.MEM.ATL.201031.1238.0051.TFM"
+      ]
+    },
+    "relative_path": "katl/katl_first_position.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "CLU5120.FRA.ATL.201031.1632.0007.TFM",
+        "DAL969.DFW.ATL.201031.2049.0007.TFM_TFDM",
+        "JBU568.FLL.ATL.201031.0053.0056.TFM",
+        "FFT2383.PHL.ATL.201030.2233.0050.TFM",
+        "DAL399.JFK.ATL.201030.2233.0049.TFM",
+        "EDV5054.MLB.ATL.201030.2144.0060.TFM",
+        "JBU568.FLL.ATL.201031.0053.0056.TFM",
+        "DAL1997.MIA.ATL.201030.2338.0042.TFM",
+        "DAL1265.DAL.ATL.201030.2228.0060.TFM",
+        "SOO3680.BWI.ATL.201031.1912.0003.TFM"
+      ],
+      "scheduled_runway_arrival_time": [
+        "2020-11-01T01:27:25",
+        "2020-11-01T01:27:44",
+        "2020-11-01T01:56:51",
+        "2020-11-01T01:26:48",
+        "2020-11-01T00:28:18",
+        "2020-11-01T01:56:35",
+        "2020-11-01T00:50:05",
+        "2020-11-01T01:27:58",
+        "2020-11-01T01:17:29",
+        "2020-11-01T00:28:31"
+      ]
+    },
+    "relative_path": "katl/katl_tbfm_scheduled_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "forecast_timestamp": [
+        "2020-11-02T17:00:00",
+        "2020-11-03T12:00:00",
+        "2020-11-02T06:00:00",
+        "2020-11-02T14:00:00",
+        "2020-11-02T12:00:00",
+        "2020-11-02T16:00:00",
+        "2020-11-02T04:00:00",
+        "2020-11-02T04:00:00",
+        "2020-11-02T18:00:00",
+        "2020-11-02T10:00:00"
+      ],
+      "temperature": [
+        62.0,
+        53.0,
+        48.0,
+        64.0,
+        58.0,
+        37.0,
+        51.0,
+        50.0,
+        60.0,
+        66.0
+      ],
+      "wind_direction": [
+        33.0,
+        8.0,
+        32.0,
+        32.0,
+        32.0,
+        31.0,
+        32.0,
+        33.0,
+        32.0,
+        32.0
+      ],
+      "wind_speed": [
+        2.0,
+        14.0,
+        11.0,
+        11.0,
+        10.0,
+        6.0,
+        5.0,
+        11.0,
+        5.0,
+        5.0
+      ],
+      "wind_gust": [
+        25.0,
+        28.0,
+        0.0,
+        0.0,
+        0.0,
+        25.0,
+        26.0,
+        0.0,
+        14.0,
+        0.0
+      ],
+      "cloud_ceiling": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        4.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0
+      ],
+      "visibility": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0
+      ],
+      "cloud": [
+        "CL",
+        "CL",
+        "FW",
+        "CL",
+        "CL",
+        "OV",
+        "FW",
+        "CL",
+        "CL",
+        "BK"
+      ],
+      "lightning_prob": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      "precip": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "relative_path": "katl/katl_lamp.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "DAL1502.ATL.FLL.201230.1441.0079.TFM",
+        "DAL1679.ATL.CHS.201230.1546.0057.TFM",
+        "SWA3959.ATL.TPA.201230.1836.0081.TFM",
+        "DAL1261.MEM.ATL.201230.1756.0061.TFM",
+        "EDV4855.BQK.ATL.201230.1126.0083.TFM",
+        "DAL2191.ATL.EGE.201230.1601.0063.TFM",
+        "DAL1571.TPA.ATL.201230.1556.0127.TFM",
+        "EDV4672.ATL.MOB.201230.2316.0048.TFM",
+        "NKS1877.ATL.FLL.201230.0026.0115.TFM",
+        "SWA4969.ATL.DCA.201230.1746.0076.TFM"
+      ]
+    },
+    "relative_path": "katl/katl_mfs_stand_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "DAL1708.SAV.ATL.201101.1643.0026.TFM",
+        "DAL1435.ORF.ATL.201101.1423.0068.TFM",
+        "SWA2239.BNA.ATL.201101.1509.0006.TFM",
+        "DAL1368.RSW.ATL.201101.1558.0088.TFM",
+        "DAL1611.CHS.ATL.201031.1454.0141.TFM",
+        "DAL1533.MCO.ATL.201031.1559.0039.TFM",
+        "SWA2523.DEN.ATL.201031.2054.0115.TFM",
+        "DAL1330.MCI.ATL.201031.1154.0080.TFM",
+        "DAL1279.HOU.ATL.201031.2338.0081.TFM",
+        "DAL1321.OKC.ATL.201101.1153.0081.TFM"
+      ],
+      "arrival_runway": [
+        "26R",
+        "26R",
+        "09R",
+        "09R",
+        "26R",
+        "09R",
+        "27L",
+        "09R",
+        "27L",
+        "26R"
+      ]
+    },
+    "relative_path": "katl/katl_arrival_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "DAL1571.ATL.TPA.201230.1301.0068.TFM",
+        "DAL2287.ATL.RSW.201230.1716.0083.TFM",
+        "EDV4758.JAN.ATL.201230.1156.0046.TFM",
+        "SWA2434.ATL.IND.201230.2236.0016.TFM",
+        "DAL1419.PBI.ATL.201230.1751.0033.TFM",
+        "DAL1715.ATL.SAV.201230.1851.0077.TFM",
+        "DAL1860.ATL.MBJ.201230.1451.0045.TFM",
+        "EDV5480.ABY.ATL.201230.1126.0070.TFM",
+        "DAL1965.NAS.ATL.201230.1816.0014.TFM",
+        "EDV5152.GNV.ATL.201230.1156.0053.TFM"
+      ]
+    },
+    "relative_path": "katl/katl_mfs_runway_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "AAL2544.CLT.MCO.211026.1655.0074.TFM",
+        "JIA5169.CLT.JAN.211026.1255.0022.TFM",
+        "AAL1659.CLT.SFO.211026.2055.0048.TFM",
+        "DAL2627.ATL.CLT.211026.2145.0046.TFM",
+        "AAL831.STL.CLT.211026.2125.0076.TFM",
+        "JIA5633.FWA.CLT.211026.1755.0144.TFM",
+        "AAL1829.ORF.CLT.211026.1850.0034.TFM",
+        "AAL1904.CLT.RDU.211026.2230.0209.TFM",
+        "AAL1982.FLL.CLT.211026.1000.0230.TFM",
+        "JIA5706.CLT.IAD.211026.1300.0214.TFM"
+      ]
+    },
+    "relative_path": "kclt/kclt_mfs_stand_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "forecast_timestamp": [
+        "2020-11-03T01:00:00",
+        "2020-11-02T04:00:00",
+        "2020-11-01T13:00:00",
+        "2020-11-01T20:00:00",
+        "2020-11-01T20:00:00",
+        "2020-11-02T00:00:00",
+        "2020-11-03T01:00:00",
+        "2020-11-02T09:00:00",
+        "2020-11-02T06:00:00",
+        "2020-11-01T08:00:00"
+      ],
+      "temperature": [
+        41.0,
+        48.0,
+        43.0,
+        60.0,
+        46.0,
+        42.0,
+        41.0,
+        53.0,
+        41.0,
+        50.0
+      ],
+      "wind_direction": [
+        30.0,
+        24.0,
+        33.0,
+        31.0,
+        29.0,
+        31.0,
+        32.0,
+        33.0,
+        29.0,
+        34.0
+      ],
+      "wind_speed": [
+        8.0,
+        15.0,
+        4.0,
+        2.0,
+        7.0,
+        7.0,
+        8.0,
+        3.0,
+        10.0,
+        3.0
+      ],
+      "wind_gust": [
+        0.0,
+        17.0,
+        0.0,
+        0.0,
+        16.0,
+        0.0,
+        22.0,
+        18.0,
+        0.0,
+        0.0
+      ],
+      "cloud_ceiling": [
+        3.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        3.0,
+        8.0,
+        8.0
+      ],
+      "visibility": [
+        7.0,
+        7.0,
+        5.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0
+      ],
+      "cloud": [
+        "CL",
+        "CL",
+        "CL",
+        "CL",
+        "CL",
+        "OV",
+        "OV",
+        "CL",
+        "BK",
+        "CL"
+      ],
+      "lightning_prob": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      "precip": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "relative_path": "kclt/kclt_lamp.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "AAL1824.PIT.CLT.211026.1235.0108.TFM",
+        "JIA9946.CAK.CLT.211027.1500.0062.TFM",
+        "AAL1545.RIC.CLT.211026.2220.0146.TFM",
+        "JIA5633.CLT.FWA.211026.1540.0124.TFM",
+        "JIA5699.HSV.CLT.211026.1735.0037.TFM",
+        "N204P.CLT.CHS.211027.1505.0001.TFM",
+        "USC414.CLT.ORL.211027.1808.0007.TFM",
+        "JIA5263.AGS.CLT.211026.0900.0030.TFM",
+        "JIA5196.CLT.LEX.211026.2020.0063.TFM",
+        "PDT6153.CLT.LYH.211026.1835.0112.TFM"
+      ]
+    },
+    "relative_path": "kclt/kclt_mfs_runway_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "DAL2858.CLT.ATL.201031.1218.0015.TFM",
+        "DAL2858.CLT.ATL.201031.1218.0015.TFM",
+        "DAL2039.CLT.DTW.201031.1054.0012.TFM",
+        "AAL2194.CLT.FLL.201101.0133.0017.TFM",
+        "DAL2858.CLT.ATL.201031.1218.0015.TFM",
+        "RPA3512.CLT.ORD.201031.1138.0027.TFM",
+        "DAL1719.CLT.ATL.201031.1054.0022.TFM",
+        "FDX816.CLT.MEM.201031.1400.0012.TFM",
+        "TMC487.CLT.MIA.201031.2152.0019.TFM",
+        "AAL2226.CLT.PWM.201101.0053.0105.TFM"
+      ],
+      "estimated_runway_departure_time": [
+        "2020-11-02 01:22:00",
+        "2020-11-01 11:14:19",
+        "2020-11-02 14:29:00",
+        "2020-11-01 12:40:00",
+        "2020-11-02 01:41:00",
+        "2020-11-01 11:11:35",
+        "2020-11-01 11:08:00",
+        "2020-11-02 14:32:00",
+        "2020-10-31 20:48:00",
+        "2020-11-01 12:41:00"
+      ]
+    },
+    "relative_path": "kclt/kclt_etd.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "N76CW.EVY.CLT.201101.1316.0002.TFM",
+        "AAL1789.BUF.CLT.201102.1118.0034.TFM",
+        "JIA5181.OAJ.CLT.201101.1733.0018.TFM",
+        "EJA767.JZI.CLT.201101.2259.0038.TFM",
+        "JIA5467.ECP.CLT.201031.1653.0082.TFM",
+        "AAL599.PHX.CLT.201101.0853.0009.TFM",
+        "JIA5337.CHA.CLT.201031.1558.0045.TFM",
+        "N608SM.M83.CLT.201031.1951.0021.TFM",
+        "JIA5341.CRW.CLT.201031.1558.0047.TFM",
+        "JIA5274.CHS.CLT.201031.1903.0084.TFM"
+      ]
+    },
+    "relative_path": "kclt/kclt_first_position.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "EDV4640.MSP.CLT.201031.0059.0019.TFM",
+        "UAL1826.IAH.CLT.201031.0113.0038.TFM",
+        "SKW5485.DEN.CLT.201030.2338.0063.TFM",
+        "UAL1826.IAH.CLT.201031.0113.0038.TFM",
+        "EDV4640.MSP.CLT.201031.0059.0019.TFM",
+        "EDV4640.MSP.CLT.201031.0059.0019.TFM",
+        "SKW5485.DEN.CLT.201030.2338.0063.TFM",
+        "RPA3449.ORD.CLT.201030.2314.0001.TFM",
+        "N814ST.ISM.CLT.201101.0025.0010.TFM",
+        "SKW5485.DEN.CLT.201030.2338.0063.TFM"
+      ],
+      "estimated_runway_arrival_time": [
+        "2020-11-01T01:53:13",
+        "2020-11-01T02:35:44",
+        "2020-11-01T03:18:49",
+        "2020-11-01T03:04:34",
+        "2020-11-01T01:51:02",
+        "2020-11-01T20:24:00",
+        "2020-11-01T03:01:17",
+        "2020-11-01T01:51:32",
+        "2020-11-01T02:06:35",
+        "2020-11-01T03:05:20"
+      ]
+    },
+    "relative_path": "kclt/kclt_tfm_estimated_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "N244FL.FLL.CLT.201101.1451.0027.TFM",
+        "RPA4464.PIT.CLT.201101.2013.0080.TFM",
+        "RPA3607.ORD.CLT.201031.1954.0092.TFM",
+        "JIA5293.ORF.CLT.201031.2253.0130.TFM",
+        "AAL894.MSP.CLT.201101.1254.0014.TFM",
+        "AAL1801.BOS.CLT.201101.1053.0098.TFM",
+        "AAL553.DFW.CLT.201101.1248.0023.TFM",
+        "PDT6208.CHA.CLT.201101.1558.0038.TFM",
+        "RPA3523.EWR.CLT.201031.2323.0031.TFM",
+        "AAL846.ORD.CLT.201101.1803.0072.TFM"
+      ],
+      "arrival_runway": [
+        "36C",
+        "36L",
+        "36L",
+        "36L",
+        "36L",
+        "36L",
+        "36L",
+        "36L",
+        "36L",
+        "36L"
+      ]
+    },
+    "relative_path": "kclt/kclt_arrival_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SKW5485.DEN.CLT.201030.2338.0063.TFM",
+        "RPA3449.ORD.CLT.201030.2314.0001.TFM",
+        "SKW5485.DEN.CLT.201030.2338.0063.TFM",
+        "RPA3449.ORD.CLT.201030.2314.0001.TFM",
+        "SKW5485.DEN.CLT.201030.2338.0063.TFM",
+        "SKW5485.DEN.CLT.201030.2338.0063.TFM",
+        "SKW5485.DEN.CLT.201030.2338.0063.TFM",
+        "AAL1577.MIA.CLT.201031.0004.0013.TFM",
+        "RPA3449.ORD.CLT.201030.2314.0001.TFM",
+        "SKW5485.DEN.CLT.201030.2338.0063.TFM"
+      ],
+      "scheduled_runway_arrival_time": [
+        "2020-11-01T02:32:03",
+        "2020-11-01T02:32:43",
+        "2020-11-01T00:46:02",
+        "2020-11-01T02:23:51",
+        "2020-11-01T02:38:20",
+        "2020-11-01T02:39:13",
+        "2020-11-01T01:51:54",
+        "2020-11-01T02:36:36",
+        "2020-11-01T00:46:40",
+        "2020-11-01T00:46:17"
+      ]
+    },
+    "relative_path": "kclt/kclt_tbfm_scheduled_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "JIA5086.CLT.TRI.201101.2243.0090.TFM",
+        "AAL585.CLT.CLE.201102.0123.0102.TFM",
+        "AAL1893.CLT.LGA.201101.2258.0020.TFM",
+        "N784PF.CLT.HHH.201102.0051.0004.TFM",
+        "N784PF.CLT.HHH.201102.0051.0004.TFM",
+        "JIA5251.CLT.SAV.201101.1813.0037.TFM",
+        "PDT6191.CLT.CHA.201101.1813.0042.TFM",
+        "JIA5151.CLT.ILM.201101.1603.0023.TFM",
+        "RPA4670.CLT.DSM.201031.1813.0052.TFM",
+        "AAL1818.CLT.RDU.201031.1754.0028.TFM"
+      ],
+      "departure_runway": [
+        "36R",
+        "36C",
+        "36R",
+        "18L",
+        "36R",
+        "36C",
+        "36C",
+        "36C",
+        "36R",
+        "36C"
+      ]
+    },
+    "relative_path": "kclt/kclt_departure_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "AAL563.PHL.CLT.211026.1045.0029.TFM",
+        "JIA5052.ABE.CLT.211026.1535.0046.TFM",
+        "AAL2775.CLT.SEA.211026.1315.0128.TFM",
+        "PDT6171.PHF.CLT.211026.2210.0130.TFM",
+        "AAL1462.CLT.IAH.211026.1840.0131.TFM",
+        "CNS8.CRE.CLT.211027.1142.0007.TFM",
+        "LXJ432.CLT.MYR.211026.2022.0018.TFM",
+        "PDT6171.CLT.PHF.211026.2020.0078.TFM",
+        "AAL968.SLC.CLT.211026.1200.0096.TFM",
+        "AAL2358.MIA.CLT.211026.1925.0165.TFM"
+      ]
+    },
+    "relative_path": "kclt/kclt_mfs_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "airport_config": [
+        "D_18C_18L_A_18C_18L_18R",
+        "D_36C_36R_A_36C_36L_36R",
+        "D_18C_18L_A_18C_18L_18R",
+        "D_18C_18L_A_18C_18L",
+        "D_18C_18L_A_18C_18L",
+        "D_36C_36R_A_36C_36L_36R",
+        "D_36L_36R_A_36R",
+        "D_36C_36R_A_36C_36L_36R",
+        "D_36C_36R_A_36C_36L_36R",
+        "D_36C_36R_A_36C_36L_36R"
+      ]
+    },
+    "relative_path": "kclt/kclt_airport_config.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "JIA5314.CLT.CRW.211026.1650.0060.TFM",
+        "AAL1649.MCO.CLT.211026.1755.0100.TFM",
+        "JIA5092.CLT.AVL.211026.2250.0046.TFM",
+        "AAL574.CLT.CVG.211026.1535.0088.TFM",
+        "AAL1711.MCO.CLT.211026.1535.0117.TFM",
+        "JIA5081.FAY.CLT.211026.1310.0073.TFM",
+        "JIA5457.CLT.MHT.211026.1300.0234.TFM",
+        "AAL2544.CLT.MCO.211026.1655.0074.TFM",
+        "AAL2004.CLT.JAX.211026.0125.0049.TFM",
+        "ENY4032.XNA.CLT.211026.2210.0112.TFM"
+      ]
+    },
+    "relative_path": "kclt/kclt_mfs_stand_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SKW5530.DEN.TYS.210618.1553.0120.TFM",
+        "UCA4827.FLG.DEN.210618.1253.0245.TFM",
+        "SWA1433.ORD.DEN.210618.1053.0153.TFM",
+        "SKW5379.DEN.BZN.210618.2133.0054.TFM",
+        "DAL2089.DEN.ATL.210618.1253.0320.TFM",
+        "SWA1758.MDW.DEN.210618.0233.0030.TFM",
+        "SWA970.LAS.DEN.210617.2153.0234.TFM",
+        "UAL1584.DEN.PVR.210618.1708.0018.TFM",
+        "SWA4600.IAH.DEN.210618.1053.0233.TFM",
+        "SKW4642.BIS.DEN.210617.2233.0030.TFM"
+      ]
+    },
+    "relative_path": "kden/kden_mfs_stand_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SKW5020.DEN.LBL.210618.2133.0016.TFM",
+        "UCA4962.DEN.GUC.210618.0123.0013.TFM",
+        "UAL661.RDU.DEN.210617.2038.0020.TFM",
+        "SWA323.DEN.OAK.210618.0018.0044.TFM",
+        "UAL2369.PVR.DEN.210618.1908.0021.TFM",
+        "UAL2087.DEN.IAD.210618.1553.0213.TFM",
+        "DAL2468.DEN.MSP.210618.1443.0091.TFM",
+        "UAL404.DEN.SNA.210618.1938.0157.TFM",
+        "DAL2383.SLC.DEN.210618.2013.0105.TFM",
+        "SWA1698.DEN.OMA.210618.1608.0103.TFM"
+      ]
+    },
+    "relative_path": "kden/kden_mfs_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SKW5546.SJC.DEN.210618.2023.0109.TFM",
+        "FFT70.DEN.CUN.210618.1318.0066.TFM",
+        "UAL1558.GRR.DEN.210618.1318.0013.TFM",
+        "DAL982.ATL.DEN.210618.1508.0046.TFM",
+        "SKW485U.DEN.ATY.210618.1713.0084.TFM",
+        "DAL1258.MSP.DEN.210617.2333.0076.TFM",
+        "SWA830.DEN.SMF.210618.1933.0097.TFM",
+        "SWA3721.DEN.MDW.210618.1113.0053.TFM",
+        "SWA2522.DEN.MCI.210618.1433.0128.TFM",
+        "UAL1260.LAS.DEN.210618.1843.0017.TFM"
+      ]
+    },
+    "relative_path": "kden/kden_mfs_stand_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SKW5441.DEN.DRO.201031.1818.0043.TFM",
+        "SWA2551.DEN.LGB.201101.1748.0067.TFM",
+        "UAL1949.DEN.IAD.201101.1458.0025.TFM",
+        "FFT190.DEN.AUS.201101.0043.0024.TFM",
+        "SWA705.DEN.PDX.201101.1603.0050.TFM",
+        "SWA1950.DEN.BNA.201031.1353.0203.TFM",
+        "SWA1399.DEN.ATL.201031.1823.0126.TFM",
+        "SWA2121.DEN.SEA.201101.0258.0028.TFM",
+        "FFT9202.DEN.LAS.201101.1111.0005.TFM",
+        "SKW5283.DEN.LIT.201101.1643.0053.TFM"
+      ],
+      "departure_runway": [
+        "08",
+        "34L",
+        "25",
+        "34R",
+        "34R",
+        "08",
+        "34L",
+        "34L",
+        "08",
+        "17L"
+      ]
+    },
+    "relative_path": "kden/kden_departure_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SWA120.MSP.DEN.201030.2228.0034.TFM",
+        "SWA2064.GRR.DEN.201030.2133.0059.TFM",
+        "SKW5601.DSM.DEN.201030.2233.0045.TFM",
+        "SWA116.IND.DEN.201030.2149.0005.TFM",
+        "SWA330.MDW.DEN.201031.0113.0017.TFM",
+        "SWA1388.MCO.DEN.201030.2334.0008.TFM",
+        "SWA120.MSP.DEN.201030.2228.0034.TFM",
+        "FFT756.PHX.DEN.201030.2243.0042.TFM",
+        "SWA2006.ABQ.DEN.201030.2323.0120.TFM",
+        "UAL1564.ORD.DEN.201030.2303.0043.TFM"
+      ],
+      "estimated_runway_arrival_time": [
+        "2020-11-01T00:21:51",
+        "2020-11-01T00:40:56",
+        "2020-11-01T00:19:14",
+        "2020-11-01T00:20:56",
+        "2020-11-01T00:24:54",
+        "2020-11-01T01:21:04",
+        "2020-11-01T00:38:57",
+        "2020-11-01T00:17:45",
+        "2020-11-01T00:45:24",
+        "2020-11-01T00:13:18"
+      ]
+    },
+    "relative_path": "kden/kden_tfm_estimated_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "LYM5414.CVN.DEN.201101.1641.0010.TFM",
+        "UAL1430.OGG.DEN.201031.0848.0016.TFM",
+        "FFT155.DSM.DEN.201031.2028.0033.TFM",
+        "AAL2635.DFW.DEN.201031.1838.0127.TFM",
+        "AAL1957.CLT.DEN.201101.1413.0046.TFM",
+        "SKW4649.BNA.DEN.201101.1418.0015.TFM",
+        "SKW5735.HSV.DEN.201031.1413.0014.TFM",
+        "SKW5114.SGU.DEN.201031.1324.0048.TFM",
+        "SKW4808.GRR.DEN.201031.1348.0017.TFM",
+        "SKW4724.SBA.DEN.201031.1318.0030.TFM"
+      ]
+    },
+    "relative_path": "kden/kden_first_position.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SWA1592.BOS.DEN.201101.1343.0023.TFM",
+        "FFT268.SNA.DEN.201101.1713.0063.TFM",
+        "FFT774.LAS.DEN.201031.0253.0025.TFM",
+        "SWA130.SMF.DEN.201101.1453.0228.TFM",
+        "SWA2551.TUS.DEN.201101.1518.0015.TFM",
+        "UAL2314.ORD.DEN.201031.1713.0016.TFM",
+        "UAL2314.ORD.DEN.201031.1713.0016.TFM",
+        "SWA2955.SAT.DEN.201030.2233.0039.TFM",
+        "DAL1234.LAX.DEN.201031.0308.0015.TFM",
+        "DAL961.DTW.DEN.201101.1323.0081.TFM"
+      ],
+      "arrival_runway": [
+        "17R",
+        "35L",
+        "16L",
+        "35L",
+        "35L",
+        "35L",
+        "35L",
+        "16L",
+        "35L",
+        "34R"
+      ]
+    },
+    "relative_path": "kden/kden_arrival_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "forecast_timestamp": [
+        "2020-11-02T06:00:00",
+        "2020-11-02T00:00:00",
+        "2020-11-01T15:00:00",
+        "2020-11-02T11:00:00",
+        "2020-11-02T21:00:00",
+        "2020-11-02T15:00:00",
+        "2020-11-02T22:00:00",
+        "2020-11-02T13:00:00",
+        "2020-11-03T07:00:00",
+        "2020-11-02T20:00:00"
+      ],
+      "temperature": [
+        48.0,
+        52.0,
+        67.0,
+        36.0,
+        66.0,
+        47.0,
+        60.0,
+        35.0,
+        48.0,
+        35.0
+      ],
+      "wind_direction": [
+        22.0,
+        19.0,
+        17.0,
+        22.0,
+        22.0,
+        21.0,
+        6.0,
+        21.0,
+        17.0,
+        22.0
+      ],
+      "wind_speed": [
+        8.0,
+        9.0,
+        4.0,
+        7.0,
+        5.0,
+        8.0,
+        8.0,
+        7.0,
+        8.0,
+        8.0
+      ],
+      "wind_gust": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cloud_ceiling": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0
+      ],
+      "visibility": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0
+      ],
+      "cloud": [
+        "CL",
+        "FW",
+        "FW",
+        "FW",
+        "FW",
+        "CL",
+        "FW",
+        "FW",
+        "CL",
+        "CL"
+      ],
+      "lightning_prob": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      "precip": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "relative_path": "kden/kden_lamp.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SKW5403.DEN.SDF.201030.2359.0007.TFM",
+        "SWA2124.DEN.SEA.201030.2203.0042.TFM",
+        "SKW5318.DEN.SAT.201031.0013.0030.TFM",
+        "SWA5398.DEN.MSP.201031.0108.0010.TFM",
+        "UAL1013.DEN.LGA.201101.0038.0084.TFM",
+        "UAL1887.DEN.BDL.201101.0038.0070.TFM",
+        "SWA2078.DEN.BUR.201030.2218.0054.TFM",
+        "UAL230.DEN.CLE.201031.0044.0008.TFM",
+        "SKW5597.DEN.ASE.201030.2359.0005.TFM",
+        "SWA2900.DEN.PIT.201030.2313.0024.TFM"
+      ],
+      "estimated_runway_departure_time": [
+        "2020-11-01 02:11:00",
+        "2020-11-01 00:35:00",
+        "2020-11-01 00:25:00",
+        "2020-10-31 23:44:00",
+        "2020-11-01 00:39:00",
+        "2020-10-31 23:45:00",
+        "2020-11-01 00:59:00",
+        "2020-11-01 00:23:00",
+        "2020-11-01 00:25:00",
+        "2020-11-01 00:32:00"
+      ]
+    },
+    "relative_path": "kden/kden_etd.csv.bz2"
+  },
+  {
+    "values": {
+      "airport_config": [
+        "D_17L_17R_A_16R_17R",
+        "D_25_34L_8_A_34R_35L_35R",
+        "D_17R_8_A_16L_16R_17R",
+        "D_34L_A_34R_35L_35R",
+        "D_17L_17R_25_8_A_16L_16R_17R",
+        "D_17R_A_16L_17R",
+        "D_25_34L_8_A_34R_35L_35R",
+        "D_25_34L_A_26_35L_35R",
+        "D_17R_8_A_16L_16R_17R",
+        "D_17L_17R_8_A_16L_16R_17R"
+      ]
+    },
+    "relative_path": "kden/kden_airport_config.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "FFT707.HRL.DEN.201030.2154.0085.TFM",
+        "UAL1214.IAD.DEN.201030.2154.0121.TFM",
+        "FFT649.CVG.DEN.201030.2353.0051.TFM",
+        "SKW5802.OMA.DEN.201030.2238.0037.TFM",
+        "FFT649.CVG.DEN.201030.2353.0051.TFM",
+        "UAL1240.IAD.DEN.201030.2024.0047.TFM",
+        "UAL1240.IAD.DEN.201030.2024.0047.TFM",
+        "UAL1959.LGA.DEN.201030.2018.0037.TFM",
+        "UAL1564.ORD.DEN.201030.2303.0043.TFM",
+        "SWA8655.MHK.DEN.201031.1540.0011.TMA"
+      ],
+      "scheduled_runway_arrival_time": [
+        "2020-11-01T00:50:16",
+        "2020-11-01T00:11:52",
+        "2020-11-01T01:51:26",
+        "2020-11-01T02:44:10",
+        "2020-11-01T00:29:09",
+        "2020-11-01T01:52:01",
+        "2020-11-01T00:10:25",
+        "2020-11-01T00:26:28",
+        "2020-11-01T01:19:47",
+        "2020-11-01T00:14:06"
+      ]
+    },
+    "relative_path": "kden/kden_tbfm_scheduled_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SKW5511.DEN.MSO.210618.1918.0035.TFM",
+        "UAL1486.EWR.DEN.210618.1648.0071.TFM",
+        "UAL498.DEN.JAC.210618.1748.0073.TFM",
+        "SWA43.DEN.ORD.210618.2133.0111.TFM",
+        "FDX1420.MEM.DEN.210618.0955.0015.TFM",
+        "SWA643.COS.DEN.210618.1208.0115.TFM",
+        "SKW5062.DEN.RKS.210618.1918.0028.TFM",
+        "UAL1082.MCO.DEN.210618.1423.0173.TFM",
+        "SWA5988.BOS.DEN.210618.1328.0039.TFM",
+        "SKW5386.MOT.DEN.210618.1843.0042.TFM"
+      ]
+    },
+    "relative_path": "kden/kden_mfs_runway_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "ENY3984.DFW.MSO.201101.1433.0084.TFM",
+        "SKW3199.DFW.DRO.201031.1844.0084.TFM",
+        "AAL2248.DFW.SFO.201031.1644.0038.TFM",
+        "ASH5818.DFW.MSN.201101.1623.0026.TFM",
+        "ENY3425.DFW.COU.201101.0028.0054.TFM",
+        "DAL969.DFW.ATL.201031.2049.0007.TFM_TFDM",
+        "ENY4136.DFW.OMA.201031.2038.0054.TFM",
+        "ENY3701.DFW.MTY.201101.1639.0105.TFM",
+        "ASH5970.DFW.MAF.201101.0038.0065.TFM",
+        "ENY4003.DFW.GJT.201031.2034.0062.TFM"
+      ],
+      "departure_runway": [
+        "17R",
+        "17R",
+        "35L",
+        "17R",
+        "35L",
+        "36R",
+        "36R",
+        "35L",
+        "35L",
+        "18L"
+      ]
+    },
+    "relative_path": "kdfw/kdfw_departure_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "AAL36.DFW.MAD.201030.2124.0059.TFM",
+        "ENY3375.DFW.MFE.201101.0103.0044.TFM",
+        "NKS8808.DFW.DEN.201031.2320.0011.TFM",
+        "AAL281.DFW.ICN.201030.1549.0036.TFM",
+        "ENY3590.DFW.MLU.201101.0238.0032.TFM",
+        "ICV62N.DFW.ORD.201031.2153.0016.TFM",
+        "AAL132.DFW.DUB.201030.2248.0023.TFM",
+        "ENY3802.DFW.FAR.201101.0023.0033.TFM",
+        "AAL2354.DFW.LAX.201101.0058.0052.TFM",
+        "AAL2698.DFW.ABQ.201101.0053.0106.TFM"
+      ],
+      "estimated_runway_departure_time": [
+        "2020-10-31 22:08:00",
+        "2020-11-02 00:52:00",
+        "2020-10-31 21:55:00",
+        "2020-11-02 01:31:00",
+        "2020-11-02 00:59:00",
+        "2020-11-02 02:51:00",
+        "2020-11-02 03:15:00",
+        "2020-11-02 01:33:00",
+        "2020-11-02 02:55:00",
+        "2020-10-31 22:16:00"
+      ]
+    },
+    "relative_path": "kdfw/kdfw_etd.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "ASH5955.BHM.DFW.201031.1923.0127.TFM",
+        "AAL2592.PHL.DFW.201101.1354.0183.TFM",
+        "ENY3795.SGF.DFW.201031.2018.0051.TFM",
+        "ENY3571.SPS.DFW.201031.1418.0024.TFM",
+        "AAL980.IAH.DFW.201031.1823.0036.TFM",
+        "QTR8032.DOH.DFW.201101.0546.0007.TFM",
+        "FDX531.MEM.DFW.201031.2300.0010.TFM",
+        "ENY3757.GJT.DFW.201031.1524.0097.TFM",
+        "AAL1448.AUS.DFW.201031.2223.0053.TFM",
+        "ENY4072.MCI.DFW.201031.2138.0029.TFM"
+      ]
+    },
+    "relative_path": "kdfw/kdfw_first_position.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "AAL962.GRU.DFW.201031.0043.0011.TFM",
+        "AAL2543.LAX.DFW.201030.2129.0001.TFM",
+        "AAL2543.LAX.DFW.201030.2129.0001.TFM",
+        "AAL2543.LAX.DFW.201030.2129.0001.TFM",
+        "AAL2543.LAX.DFW.201030.2129.0001.TFM",
+        "AAL9788.GSO.DFW.201031.1459.0038.TFM_TFDM",
+        "SKW3751.MSP.DFW.201030.2248.0061.TFM",
+        "AAL9788.GSO.DFW.201031.1459.0038.TFM_TFDM",
+        "SKW3751.MSP.DFW.201030.2248.0061.TFM",
+        "UAL2230.ORD.DFW.201030.2258.0062.TFM"
+      ],
+      "estimated_runway_arrival_time": [
+        "2020-11-01T05:55:09",
+        "2020-11-01T00:55:00",
+        "2020-11-01T00:52:41",
+        "2020-11-01T01:42:18",
+        "2020-11-01T02:09:24",
+        "2020-11-01T02:09:40",
+        "2020-11-01T00:54:24",
+        "2020-11-01T01:04:35",
+        "2020-11-01T02:09:17",
+        "2020-11-01T01:36:14"
+      ]
+    },
+    "relative_path": "kdfw/kdfw_tfm_estimated_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "AAL2626.SNA.DFW.201101.1543.0022.TFM",
+        "ENY3372.MFE.DFW.201101.1153.0124.TFM",
+        "AAL2844.GEG.DFW.201101.1553.0128.TFM",
+        "ENY4042.HSV.DFW.201031.2148.0080.TFM",
+        "ASH5770.ELP.DFW.201031.1823.0140.TFM",
+        "AAL1475.RSW.DFW.201031.2044.0091.TFM",
+        "AAL1009.BNA.DFW.201031.2138.0094.TFM",
+        "AAL2527.BOS.DFW.201031.1054.0016.TFM",
+        "ENY3303.BRO.DFW.201101.1153.0109.TFM",
+        "AAL1622.DEN.DFW.201031.1754.0041.TFM"
+      ],
+      "arrival_runway": [
+        "35C",
+        "35C",
+        "31R",
+        "36R",
+        "17L",
+        "17C",
+        "13R",
+        "36R",
+        "35L",
+        "17L"
+      ]
+    },
+    "relative_path": "kdfw/kdfw_arrival_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SKW3119.MKE.DFW.210208.1626.0094.TFM",
+        "AAL2099.DTW.DFW.210207.2141.0093.TFM",
+        "AAL1869.DFW.SEA.210208.1841.0062.TFM",
+        "ENY3867.DFW.CID.210208.1441.0010.TFM",
+        "ENY3410.MEM.DFW.210207.2301.0070.TFM",
+        "SKW2986.DFW.BIS.210208.1641.0022.TFM",
+        "ASH5847.DFW.IAH.210208.1426.0079.TFM",
+        "ENY3652.DFW.GRI.210208.0326.0042.TFM",
+        "AAL2222.DFW.DCA.210208.0141.0017.TFM",
+        "AAL2515.DEN.DFW.210208.1741.0103.TFM"
+      ]
+    },
+    "relative_path": "kdfw/kdfw_mfs_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "airport_config": [
+        "D_17R_18L_A_17C_17L",
+        "D_35L_36R_A_31R_35C_35R_36R",
+        "D_17R_18L_A_13R_17C_17L",
+        "D_31L_35L_36R_A_31R_35C_35R_36R",
+        "D_31L_35L_36R_A_31R_35C_35R_36R",
+        "D_17R_A_17C_17L_18L",
+        "D_31L_35L_36R_A_31R_35C_35R_36R",
+        "D_31L_35L_36R_A_31R_35C_35R_36R",
+        "D_17R_18L_A_13R_17C_17L",
+        "D_17R_A_17R"
+      ]
+    },
+    "relative_path": "kdfw/kdfw_airport_config.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "AAL456.DFW.CLT.210208.1426.0094.TFM",
+        "ENY3868.ELP.DFW.210208.1741.0050.TFM",
+        "ASH5737.DFW.ECP.210208.0216.0069.TFM",
+        "UPS1302.SDF.DFW.210208.1428.0016.TFM",
+        "ENY3307.DFW.JAN.210208.2311.0020.TFM",
+        "ENY3326.DFW.ORF.210208.1641.0060.TFM",
+        "ASH5773.DFW.RNO.210208.2246.0053.TFM",
+        "ENY4202.DFW.MGM.210208.1856.0075.TFM",
+        "ASH5748.MLI.DFW.210208.1256.0036.TFM",
+        "ENY3698.DFW.AGU.210208.0226.0023.TFM"
+      ]
+    },
+    "relative_path": "kdfw/kdfw_mfs_stand_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "forecast_timestamp": [
+        "2020-11-02T15:00:00",
+        "2020-11-02T13:00:00",
+        "2020-11-02T17:00:00",
+        "2020-11-02T01:00:00",
+        "2020-11-03T10:00:00",
+        "2020-11-02T14:00:00",
+        "2020-11-02T13:00:00",
+        "2020-11-02T08:00:00",
+        "2020-11-02T11:00:00",
+        "2020-11-02T21:00:00"
+      ],
+      "temperature": [
+        67.0,
+        57.0,
+        61.0,
+        61.0,
+        69.0,
+        57.0,
+        61.0,
+        67.0,
+        52.0,
+        66.0
+      ],
+      "wind_direction": [
+        17.0,
+        17.0,
+        3.0,
+        14.0,
+        3.0,
+        2.0,
+        14.0,
+        2.0,
+        13.0,
+        18.0
+      ],
+      "wind_speed": [
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        9.0,
+        6.0,
+        17.0,
+        6.0,
+        7.0
+      ],
+      "wind_gust": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cloud_ceiling": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0
+      ],
+      "visibility": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0
+      ],
+      "cloud": [
+        "FW",
+        "CL",
+        "CL",
+        "CL",
+        "FW",
+        "CL",
+        "CL",
+        "FW",
+        "SC",
+        "CL"
+      ],
+      "lightning_prob": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      "precip": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "relative_path": "kdfw/kdfw_lamp.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "AAL9788.GSO.DFW.201031.1459.0038.TFM_TFDM",
+        "ASH6033.IAD.DFW.201030.2133.0046.TFM",
+        "UAL2230.ORD.DFW.201030.2258.0062.TFM",
+        "UAL231.DEN.DFW.201031.0009.0004.TFM",
+        "SKW3751.MSP.DFW.201030.2248.0061.TFM",
+        "UAL231.DEN.DFW.201031.0009.0004.TFM",
+        "AAL2543.LAX.DFW.201030.2129.0001.TFM",
+        "SKW3751.MSP.DFW.201030.2248.0061.TFM",
+        "AAL2543.LAX.DFW.201030.2129.0001.TFM",
+        "UAL231.DEN.DFW.201031.0009.0004.TFM"
+      ],
+      "scheduled_runway_arrival_time": [
+        "2020-11-01T02:07:57",
+        "2020-11-01T01:20:40",
+        "2020-11-01T01:36:57",
+        "2020-11-01T01:43:54",
+        "2020-11-01T00:55:24",
+        "2020-11-01T00:55:24",
+        "2020-11-01T01:04:13",
+        "2020-11-01T01:41:57",
+        "2020-11-01T01:21:20",
+        "2020-11-01T01:42:24"
+      ]
+    },
+    "relative_path": "kdfw/kdfw_tbfm_scheduled_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "ENY3701.MTY.DFW.210208.1926.0092.TFM",
+        "ENY4023.DFW.SGF.210208.1506.0043.TFM",
+        "AAL1190.DFW.CUN.210208.1431.0032.TFM",
+        "AAL278.TUL.DFW.210208.1541.0058.TFM",
+        "ENY4035.HSV.DFW.210208.1911.0056.TFM",
+        "ENY3431.MHK.DFW.210208.1156.0031.TFM",
+        "AAL2258.DFW.STL.210208.1846.0092.TFM",
+        "AAL2942.DFW.LAS.210208.0311.0025.TFM",
+        "SKW3285.SHV.DFW.210208.1826.0042.TFM",
+        "UPS4953.OAK.DFW.210209.1653.0019.TFM"
+      ]
+    },
+    "relative_path": "kdfw/kdfw_mfs_stand_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "AAL967.FLL.DFW.210208.1356.0062.TFM",
+        "ENY3506.JAN.DFW.210208.1521.0030.TFM",
+        "BAW31F.LHR.DFW.210207.1341.0057.TFM",
+        "AAL1403.BWI.DFW.210208.1156.0186.TFM",
+        "ASH5857.SBA.DFW.210207.2136.0076.TFM",
+        "AAL1887.DFW.SEA.210208.2056.0117.TFM",
+        "AAL896.DEN.DFW.210208.2021.0065.TFM",
+        "AAL679.PIT.DFW.210208.1211.0054.TFM",
+        "ENY4102.DFW.HSV.210208.2111.0025.TFM",
+        "AAL520.DFW.PHX.210208.1451.0058.TFM"
+      ]
+    },
+    "relative_path": "kdfw/kdfw_mfs_runway_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "AAL2164.MDE.JFK.210817.0636.0002.TFM_TFDM",
+        "RPA5619.JFK.BUF.210817.1854.0191.TFM",
+        "JBU6150.EWR.JFK.210819.0101.0008.TMA",
+        "JBU2693.JFK.MIA.210817.2024.0090.TFM",
+        "DLH400.FRA.JFK.210817.0854.0029.TFM",
+        "JBU1692.LIR.JFK.210816.1949.0113.TFM",
+        "JBU2864.SRQ.JFK.210817.1539.0090.TFM",
+        "EDV4668.JFK.BTV.210817.0159.0024.TFM",
+        "LPE2380.LIM.JFK.210818.0247.0006.TFM",
+        "JBU2884.MCO.JFK.210817.1909.0088.TFM"
+      ]
+    },
+    "relative_path": "kjfk/kjfk_mfs_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "JBU1111.JFK.CUR.210817.1454.0140.TFM",
+        "DAL371.LAS.JFK.210818.1854.0305.TFM",
+        "ASA393.JFK.SEA.210817.2149.0135.TFM",
+        "JBU736.STI.JFK.210817.0859.0017.TFM",
+        "UAL521.JFK.SFO.210818.1154.0184.TFM",
+        "DAL182.JFK.FCO.210816.2349.0103.TFM",
+        "EDV5124.JFK.MSP.210818.2254.0319.TFM",
+        "AAL341.JFK.LAX.210817.1624.0172.TFM",
+        "JBU192.ACK.JFK.210817.1844.0054.TFM",
+        "JBU2516.JFK.SYR.210817.0144.0086.TFM"
+      ]
+    },
+    "relative_path": "kjfk/kjfk_mfs_stand_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "EDV4632.SYR.JFK.201101.1203.0049.TFM",
+        "DAL1065.MCO.JFK.201102.1643.0075.TFM",
+        "DAL320.SEA.JFK.201102.1543.0060.TFM",
+        "SCX3022.LAL.JFK.201103.2101.0019.TFM",
+        "JBU164.SRQ.JFK.201031.1644.0025.TFM",
+        "SCX3022.LAL.JFK.201104.2155.0001.TMA",
+        "DAL788.SLC.JFK.201101.2113.0096.TFM",
+        "BOX450.FRA.JFK.201105.0124.0018.TMA",
+        "JBU9606.PHL.JFK.201031.2247.0004.TMA",
+        "DAL1065.MCO.JFK.201031.1643.0038.TFM"
+      ],
+      "arrival_runway": [
+        "31R",
+        "31L",
+        "31R",
+        "31L",
+        "22L",
+        "31R",
+        "22L",
+        "22L",
+        "31R",
+        "22L"
+      ]
+    },
+    "relative_path": "kjfk/kjfk_arrival_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "EDV5036.JFK.SYR.210817.0139.0092.TFM",
+        "LOT6.WAW.JFK.210817.1014.0034.TFM",
+        "AAL1467.JFK.DCA.210817.2154.0333.TFM",
+        "RAM201.JFK.CMN.210817.0034.0046.TFM",
+        "DAL1373.TPA.JFK.210817.2349.0036.TFM",
+        "ABX956.JFK.MIA.210819.1424.0011.TMA",
+        "JBU779.JFK.MBJ.210817.0859.0016.TFM",
+        "DAL1863.SDQ.JFK.210816.2249.0075.TFM",
+        "BCS971.JFK.LEJ.210818.0636.0004.TFM",
+        "JBU84.JFK.MCO.210817.1519.0085.TFM"
+      ]
+    },
+    "relative_path": "kjfk/kjfk_mfs_runway_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "JBU236.STI.JFK.210817.0549.0014.TFM",
+        "RPA5776.DCA.JFK.210817.2009.0114.TFM",
+        "DAL1373.TPA.JFK.210816.2349.0089.TFM",
+        "AAL159.MIA.JFK.210817.2134.0135.TFM",
+        "RPA5725.MSY.JFK.210816.2329.0100.TFM",
+        "AAL101.LHR.JFK.210817.0829.0015.TFM",
+        "DAL232.JFK.TLV.210818.1934.0081.TFM",
+        "DAL1605.JFK.TPA.210817.1939.0160.TFM",
+        "RPA5776.DCA.JFK.210817.2009.0114.TFM",
+        "EDV5441.JFK.MSP.210817.1114.0064.TFM"
+      ]
+    },
+    "relative_path": "kjfk/kjfk_mfs_stand_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "JBU852.CUN.JFK.201030.1958.0044.TFM",
+        "DAL624.MEX.JFK.201030.2018.0077.TFM",
+        "ATN3456.SCK.JFK.201031.1837.0015.TMA",
+        "DAL301.SFO.JFK.201030.1948.0064.TFM",
+        "DAL789.SLC.JFK.201030.2323.0096.TFM",
+        "DAL789.SLC.JFK.201030.2323.0096.TFM",
+        "DAL789.SLC.JFK.201030.2323.0096.TFM",
+        "EAL662.PAP.JFK.201031.1756.0004.TFM",
+        "DAL330.SEA.JFK.201030.2108.0029.TFM",
+        "JBU1498.DEN.JFK.201030.2213.0064.TFM"
+      ],
+      "estimated_runway_arrival_time": [
+        "2020-11-01T02:05:48",
+        "2020-11-01T01:50:43",
+        "2020-11-01T00:32:29",
+        "2020-11-01T00:28:04",
+        "2020-11-01T01:00:58",
+        "2020-11-01T01:09:32",
+        "2020-11-01T01:00:58",
+        "2020-11-01T01:35:43",
+        "2020-11-01T03:10:00",
+        "2020-11-01T01:05:16"
+      ]
+    },
+    "relative_path": "kjfk/kjfk_tfm_estimated_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "EVA031.JFK.TPE.201101.0252.0011.TFM",
+        "DAL216.JFK.UNKN.201030.2343.0018.TFM",
+        "DHK971.JFK.EMA.201031.1820.0003.TFM",
+        "ABX152.JFK.CVG.201101.0528.0013.TFM",
+        "CKS256.JFK.CVG.201101.0141.0001.TMA",
+        "DAL300.JFK.SFO.201030.2154.0098.TFM",
+        "DAL262.JFK.CDG.201030.2323.0074.TFM",
+        "THY12.JFK.UNKN.201031.0423.0022.TFM",
+        "EAL322.JFK.GYE.201101.0044.0006.TFM",
+        "DAL307.JFK.SEA.201030.2103.0053.TFM"
+      ],
+      "estimated_runway_departure_time": [
+        "2020-10-31 19:13:00",
+        "2020-11-02 06:10:00",
+        "2020-11-01 00:29:00",
+        "2020-10-31 22:49:00",
+        "2020-11-01 00:45:00",
+        "2020-11-01 03:29:00",
+        "2020-11-01 00:47:00",
+        "2020-11-02 00:38:00",
+        "2020-11-01 00:43:00",
+        "2020-11-01 00:18:00"
+      ]
+    },
+    "relative_path": "kjfk/kjfk_etd.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "DAL1011.MSP.JFK.201030.2338.0034.TFM",
+        "ATN3456.SCK.JFK.201031.1837.0015.TMA",
+        "JBU1284.MCO.JFK.201030.2349.0003.TFM",
+        "JBU852.CUN.JFK.201030.1958.0044.TFM",
+        "DAL1011.MSP.JFK.201030.2338.0034.TFM",
+        "DAL1011.MSP.JFK.201030.2338.0034.TFM",
+        "JBU852.CUN.JFK.201030.1958.0044.TFM",
+        "EAL662.PAP.JFK.201031.1756.0004.TFM",
+        "JBU1284.MCO.JFK.201030.2349.0003.TFM",
+        "GTI555.ANC.JFK.201031.1432.0010.TFM"
+      ],
+      "scheduled_runway_arrival_time": [
+        "2020-11-01T01:40:56",
+        "2020-11-01T02:34:30",
+        "2020-11-01T01:34:10",
+        "2020-11-01T02:19:12",
+        "2020-11-01T01:57:46",
+        "2020-11-01T01:40:06",
+        "2020-11-01T01:42:37",
+        "2020-11-01T02:00:13",
+        "2020-11-01T00:40:58",
+        "2020-11-01T01:55:22"
+      ]
+    },
+    "relative_path": "kjfk/kjfk_tbfm_scheduled_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "forecast_timestamp": [
+        "2020-11-02T02:00:00",
+        "2020-11-02T01:00:00",
+        "2020-11-02T14:00:00",
+        "2020-11-02T09:00:00",
+        "2020-11-02T11:00:00",
+        "2020-11-01T18:00:00",
+        "2020-11-02T21:00:00",
+        "2020-11-01T19:00:00",
+        "2020-11-01T18:00:00",
+        "2020-11-03T00:00:00"
+      ],
+      "temperature": [
+        43.0,
+        43.0,
+        49.0,
+        46.0,
+        47.0,
+        46.0,
+        40.0,
+        43.0,
+        44.0,
+        45.0
+      ],
+      "wind_direction": [
+        20.0,
+        28.0,
+        29.0,
+        20.0,
+        29.0,
+        29.0,
+        28.0,
+        29.0,
+        29.0,
+        28.0
+      ],
+      "wind_speed": [
+        21.0,
+        24.0,
+        8.0,
+        14.0,
+        23.0,
+        8.0,
+        23.0,
+        22.0,
+        25.0,
+        22.0
+      ],
+      "wind_gust": [
+        30.0,
+        0.0,
+        30.0,
+        30.0,
+        29.0,
+        37.0,
+        36.0,
+        0.0,
+        26.0,
+        36.0
+      ],
+      "cloud_ceiling": [
+        3.0,
+        7.0,
+        8.0,
+        6.0,
+        5.0,
+        8.0,
+        6.0,
+        8.0,
+        6.0,
+        8.0
+      ],
+      "visibility": [
+        7.0,
+        7.0,
+        7.0,
+        5.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0
+      ],
+      "cloud": [
+        "OV",
+        "OV",
+        "BK",
+        "SC",
+        "OV",
+        "BK",
+        "SC",
+        "BK",
+        "OV",
+        "BK"
+      ],
+      "lightning_prob": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      "precip": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false
+      ]
+    },
+    "relative_path": "kjfk/kjfk_lamp.csv.bz2"
+  },
+  {
+    "values": {
+      "airport_config": [
+        "D_31L_A_31L_31R",
+        "D_31L_A_31L_31R",
+        "D_31L_A_31L_31R",
+        "D_31L_A_31L_31R",
+        "D_31L_A_31L_31R",
+        "D_31L_A_31L_31R",
+        "D_31L_A_31L_31R",
+        "D_22R_A_22L_22R",
+        "D_31L_A_31L",
+        "D_31L_A_31L_31R"
+      ]
+    },
+    "relative_path": "kjfk/kjfk_airport_config.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "JBU409.JFK.SDQ.201031.1254.0034.TFM",
+        "DAL639.JFK.SJU.201031.1254.0032.TFM",
+        "JBU1523.JFK.LAX.201031.2223.0144.TFM",
+        "LAN1971.JFK.SCL.201101.1130.0006.TFM",
+        "JBU403.JFK.SJU.201031.1403.0054.TFM",
+        "ELY842.JFK.LGG.201101.1148.0023.TFM",
+        "CCA594.JFK.PEK.201104.1852.0081.TMA",
+        "FDX1292.JFK.MEM.201102.0500.0007.TFM",
+        "AAL1706.JFK.MIA.201105.1053.0155.TFM",
+        "RPA5812.JFK.RDU.201102.1948.0052.TFM"
+      ],
+      "departure_runway": [
+        "31L",
+        "22R",
+        "31L",
+        "31L",
+        "22R",
+        "22R",
+        "22R",
+        "22R",
+        "22R",
+        "22R"
+      ]
+    },
+    "relative_path": "kjfk/kjfk_departure_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "GPD386.SHD.JFK.201104.1351.0021.TFM",
+        "CSN8165.CAN.JFK.201101.1428.0010.TFM",
+        "AZA608.FCO.JFK.201104.0823.0022.TFM",
+        "JBU1630.RSW.JFK.201101.1648.0053.TFM",
+        "AAL2339.PHX.JFK.201102.1753.0126.TFM",
+        "DAL605.MEX.JFK.201103.1453.0176.TFM",
+        "VIR3N.LHR.JFK.201031.1043.0012.TFM",
+        "EDV4632.SYR.JFK.201031.1203.0018.TFM",
+        "DAL1011.MSP.JFK.201101.0038.0026.TFM",
+        "AAR587.ANC.JFK.201101.2011.0011.TFM"
+      ]
+    },
+    "relative_path": "kjfk/kjfk_first_position.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "FDX257.MEM.BQN.201031.0529.0004.TFM",
+        "EDV4770.MEM.DTW.201031.1223.0078.TFM",
+        "SWA2231.MEM.ATL.201031.1238.0051.TFM",
+        "FDX710.MEM.SEA.201031.0830.0001.TFM",
+        "SWA2231.MEM.ATL.201031.1238.0051.TFM",
+        "FDX1585.MEM.DEN.201101.0415.0001.TFM",
+        "FDX980.MEM.SEA.201030.2300.0012.TFM",
+        "FDX9120.MEM.SJU.201031.1651.0041.TFM",
+        "DAL1648.MEM.ATL.201031.1208.0051.TFM",
+        "SWA2231.MEM.ATL.201031.1238.0051.TFM"
+      ],
+      "estimated_runway_departure_time": [
+        "2020-11-01 13:32:00",
+        "2020-11-01 12:23:00",
+        "2020-11-01 12:32:00",
+        "2020-11-01 13:02:41",
+        "2020-11-01 10:01:00",
+        "2020-11-01 01:07:00",
+        "2020-11-01 08:43:00",
+        "2020-11-01 10:01:00",
+        "2020-10-31 22:30:00",
+        "2020-11-01 06:52:00"
+      ]
+    },
+    "relative_path": "kmem/kmem_etd.csv.bz2"
+  },
+  {
+    "values": {
+      "airport_config": [
+        "D_36C_36L_36R_9_A_36L_36R_9",
+        "D_27_36C_36L_36R_A_27_36L_36R",
+        "D_36C_36L_36R_A_27_36L_36R",
+        "D_18C_18L_18R_A_18L_18R_27",
+        "D_36C_A_27_36L_36R",
+        "D_18C_18L_18R_A_18C_18L_18R",
+        "D_27_36C_36L_36R_A_27_36L_36R",
+        "D_18C_18L_18R_27_A_27",
+        "D_36C_36L_36R_A_36L_36R",
+        "D_18C_18L_18R_A_18L_18R_27"
+      ]
+    },
+    "relative_path": "kmem/kmem_airport_config.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "FDX9328.ANC.MEM.201030.2300.0007.TFM",
+        "EDV4634.DTW.MEM.201030.2323.0084.TFM",
+        "EDV4634.DTW.MEM.201030.2323.0084.TFM",
+        "EDV4634.DTW.MEM.201030.2323.0084.TFM",
+        "N297GB.APF.AUZ.201031.2114.0034.TMA",
+        "EDV4634.DTW.MEM.201030.2323.0084.TFM",
+        "FDX5217.CGN.MEM.201030.1730.0002.TFM",
+        "SKW5333.DEN.MEM.201030.2338.0071.TFM",
+        "EDV4634.DTW.MEM.201030.2323.0084.TFM",
+        "FDX9328.ANC.MEM.201030.2300.0007.TFM"
+      ],
+      "scheduled_runway_arrival_time": [
+        "2020-11-01T01:38:47",
+        "2020-11-01T01:17:09",
+        "2020-11-01T03:06:58",
+        "2020-11-01T01:13:58",
+        "2020-11-01T02:57:52",
+        "2020-11-01T01:17:20",
+        "2020-11-01T01:59:59",
+        "2020-11-01T01:13:43",
+        "2020-11-01T03:02:23",
+        "2020-11-01T02:00:19"
+      ]
+    },
+    "relative_path": "kmem/kmem_tbfm_scheduled_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "FDX90.KIX.MEM.210708.1939.0020.TFM",
+        "FDX1437.MEM.MKE.210708.0940.0061.TFM",
+        "JIA5099.CLT.MEM.210708.1132.0041.TFM",
+        "FDX67.MEM.MTY.210708.1010.0043.TFM",
+        "FDX541.MEM.LAS.210709.2209.0033.TFM",
+        "FDX1305.ICT.MEM.210708.0440.0035.TFM",
+        "FDX9208.MEM.HNL.210708.2309.0022.TFM",
+        "FDX817.GEG.MEM.210708.1440.0042.TFM",
+        "FDX134.MEM.YWG.210708.1010.0037.TFM",
+        "FDX399.MEM.ORF.210708.2140.0034.TFM"
+      ]
+    },
+    "relative_path": "kmem/kmem_mfs_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "FDX822.BOS.MEM.201031.1500.0003.TFM",
+        "EDV4634.DTW.MEM.201101.0023.0024.TFM",
+        "FDX1212.MHT.MEM.201104.0300.0019.TFM",
+        "N900LP.IAD.MEM.201102.0051.0021.TFM",
+        "SWA2002.ATL.MEM.201031.1838.0085.TFM",
+        "FDX1200.FLL.MEM.201103.0330.0023.TFM",
+        "SKW5354.IAH.MEM.201101.0208.0040.TFM",
+        "CNS331.OMA.MEM.201101.1734.0010.TFM",
+        "DAL1650.ATL.MEM.201031.0233.0018.TFM",
+        "FDX1226.JAX.MEM.201102.0400.0006.TFM"
+      ],
+      "arrival_runway": [
+        "36C",
+        "27",
+        "36L",
+        "36C",
+        "36R",
+        "18C",
+        "27",
+        "36L",
+        "27",
+        "27"
+      ]
+    },
+    "relative_path": "kmem/kmem_arrival_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "UPS1387.MEM.RFD.201102.1336.0002.TFM",
+        "FDX716.MEM.SAT.201103.2200.0003.TFM",
+        "FDX57.MEM.BQN.201031.2330.0012.TFM",
+        "FDX700.MEM.SFO.201102.2200.0011.TFM",
+        "FDX724.MEM.TYS.201103.2230.0017.TFM",
+        "FDX9873.MEM.ANC.201031.1430.0003.TFM",
+        "FDX379.MEM.SAT.201031.2230.0015.TFM",
+        "FDX356.MEM.CLE.201103.2300.0028.TFM",
+        "FDX1461.MEM.MIA.201102.1000.0029.TFM",
+        "FDX240.MEM.YYC.201103.2230.0013.TFM"
+      ],
+      "departure_runway": [
+        "36C",
+        "36C",
+        "18C",
+        "36L",
+        "36C",
+        "18C",
+        "18C",
+        "36C",
+        "18L",
+        "18R"
+      ]
+    },
+    "relative_path": "kmem/kmem_departure_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "AAL2552.CLT.MEM.210709.2027.0129.TFM",
+        "FDX811.RIC.MEM.210708.1310.0028.TFM",
+        "DAL2664.ATL.MEM.210708.1607.0113.TFM",
+        "FDX821.AFW.MEM.210709.1615.0011.TFM",
+        "FDX1479.MEM.SHV.210708.0941.0013.TFM",
+        "ENY3785.MIA.MEM.210708.0107.0046.TFM",
+        "FDX1459.MEM.LBB.210709.0940.0001.TFM",
+        "FDX1491.MEM.PWM.210708.0909.0019.TFM",
+        "FDX1263.ATL.MEM.210709.0440.0002.TFM",
+        "FDX371.MEM.TUS.210708.2109.0024.TFM"
+      ]
+    },
+    "relative_path": "kmem/kmem_mfs_stand_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "FDX5217.CGN.MEM.201030.1730.0002.TFM",
+        "FDX90.KIX.MEM.201030.1930.0003.TFM",
+        "FDX9878.KIX.MEM.201030.1600.0014.TFM",
+        "FDX9328.ANC.MEM.201030.2300.0007.TFM",
+        "EDV4634.DTW.MEM.201030.2323.0084.TFM",
+        "FDX9001.STN.MEM.201030.2100.0009.TFM",
+        "FDX9328.ANC.MEM.201030.2300.0007.TFM",
+        "FDX5217.CGN.MEM.201030.1730.0002.TFM",
+        "RPA3427.ORD.MEM.201030.2253.0079.TFM",
+        "FDX9328.ANC.MEM.201030.2300.0007.TFM"
+      ],
+      "estimated_runway_arrival_time": [
+        "2020-11-01T03:00:23",
+        "2020-11-01T06:13:49",
+        "2020-11-01T01:52:03",
+        "2020-11-01T05:04:24",
+        "2020-11-01T01:25:31",
+        "2020-11-01T06:13:35",
+        "2020-11-01T08:21:34",
+        "2020-11-01T03:03:37",
+        "2020-11-01T09:19:44",
+        "2020-11-01T01:49:28"
+      ]
+    },
+    "relative_path": "kmem/kmem_tfm_estimated_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "FDX1221.ATL.MEM.210708.0339.0019.TFM",
+        "DAL2741.ATL.MEM.210709.1207.0081.TFM",
+        "SKW3600.DTW.MEM.210708.0057.0099.TFM",
+        "FDX1439.MEM.PHL.210708.0910.0037.TFM",
+        "FDY8000.MEM.AWM.210709.1605.0025.TFM",
+        "FDX1317.EWR.MEM.210709.0209.0013.TFM",
+        "UPS1385.MEM.SDF.210709.1304.0021.TFM",
+        "FDX1334.ABQ.MEM.210709.0310.0001.TFM",
+        "FDX629.LBB.MEM.210709.1609.0023.TFM",
+        "MTN8387.MEM.CHS.210709.0551.0004.TFM"
+      ]
+    },
+    "relative_path": "kmem/kmem_mfs_runway_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "FDX1235.BDL.MEM.210709.0240.0003.TFM",
+        "FDX44.MEM.VCP.210708.0910.0062.TFM",
+        "FDX1307.IND.MEM.210708.0440.0002.TFM",
+        "FDX1312.SAT.MEM.210708.0440.0007.TFM",
+        "FDX1359.ONT.MEM.210708.0309.0013.TFM",
+        "FDX1487.MEM.COS.210708.0941.0016.TFM",
+        "FDX9198.OAK.MEM.210708.1240.0021.TFM",
+        "FDX1445.MEM.CAE.210708.0941.0003.TFM",
+        "FDX1514.MEM.EWR.210709.0909.0024.TFM",
+        "FDX980.MEM.HNL.210710.1946.0015.TFM"
+      ]
+    },
+    "relative_path": "kmem/kmem_mfs_stand_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "forecast_timestamp": [
+        "2020-11-02T05:00:00",
+        "2020-11-02T04:00:00",
+        "2020-11-02T23:00:00",
+        "2020-11-03T06:00:00",
+        "2020-11-01T15:00:00",
+        "2020-11-01T06:00:00",
+        "2020-11-03T08:00:00",
+        "2020-11-01T21:00:00",
+        "2020-11-02T04:00:00",
+        "2020-11-02T20:00:00"
+      ],
+      "temperature": [
+        49.0,
+        58.0,
+        42.0,
+        58.0,
+        46.0,
+        58.0,
+        41.0,
+        44.0,
+        58.0,
+        50.0
+      ],
+      "wind_direction": [
+        3.0,
+        34.0,
+        30.0,
+        1.0,
+        28.0,
+        28.0,
+        36.0,
+        3.0,
+        5.0,
+        36.0
+      ],
+      "wind_speed": [
+        5.0,
+        4.0,
+        4.0,
+        3.0,
+        5.0,
+        12.0,
+        14.0,
+        3.0,
+        5.0,
+        5.0
+      ],
+      "wind_gust": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        16.0
+      ],
+      "cloud_ceiling": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0
+      ],
+      "visibility": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0
+      ],
+      "cloud": [
+        "CL",
+        "SC",
+        "CL",
+        "CL",
+        "CL",
+        "CL",
+        "CL",
+        "CL",
+        "CL",
+        "CL"
+      ],
+      "lightning_prob": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      "precip": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "relative_path": "kmem/kmem_lamp.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "FDX819.GTF.MEM.201103.1530.0014.TFM",
+        "FDX854.FSD.MEM.201102.1430.0027.TFM",
+        "FDX613.ELP.MEM.201102.1530.0049.TFM",
+        "FDX1216.PDX.MEM.201102.0330.0017.TFM",
+        "FDX464.SAT.MEM.201031.1630.0002.TFM",
+        "FDX1304.MCI.MEM.201102.0430.0061.TFM",
+        "FDX1201.DFW.MEM.201102.0500.0002.TFM",
+        "FDX1322.GRR.MEM.201103.0530.0001.TFM",
+        "FDX82.QRO.MEM.201104.0300.0023.TFM",
+        "FDX650.ORD.MEM.201103.1500.0014.TFM"
+      ]
+    },
+    "relative_path": "kmem/kmem_first_position.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "UPS413.BOG.MIA.201031.0626.0002.TFM",
+        "AAL1277.ORD.MIA.201030.2253.0068.TFM",
+        "DAL1422.ATL.MIA.201030.2338.0039.TFM",
+        "TPA4014.MDE.MIA.201031.1810.0008.TFM",
+        "XOJ578.APC.MIA.201031.0415.0002.TFM",
+        "XAOAV.TLC.SDM.201031.1447.0018.TFM",
+        "IBE6117.MAD.MIA.201030.1504.0040.TFM",
+        "XAOAV.TLC.SDM.201031.1447.0018.TFM",
+        "AAL1277.ORD.MIA.201030.2253.0068.TFM",
+        "TPA4012.BOG.MIA.201031.2031.0009.TMA"
+      ],
+      "scheduled_runway_arrival_time": [
+        "2020-11-01T00:20:14",
+        "2020-11-01T00:39:28",
+        "2020-11-01T01:08:38",
+        "2020-11-01T00:25:08",
+        "2020-11-01T00:25:49",
+        "2020-11-01T00:21:46",
+        "2020-11-01T01:31:40",
+        "2020-11-01T00:22:06",
+        "2020-11-01T02:17:56",
+        "2020-11-01T00:26:52"
+      ]
+    },
+    "relative_path": "kmia/kmia_tbfm_scheduled_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "AAL2221.MIA.SJO.201031.1548.0045.TFM",
+        "LAE1825.MIA.VCP.201101.0128.0082.TFM",
+        "AAL1089.MIA.BGI.201101.1533.0066.TFM",
+        "TPA4057.MIA.MAO.201104.0745.0003.TFM",
+        "SWQ840.MIA.KIN.201103.1812.0008.TFM",
+        "N676AS.MIA.SCL.201102.1414.0015.TFM",
+        "UAL2147.MIA.IAH.201102.1608.0097.TFM",
+        "AAL2290.MIA.ATL.201101.0133.0020.TFM",
+        "AAL2796.MIA.ORD.201103.1518.0072.TFM",
+        "AAL2471.MIA.LAX.201103.1718.0094.TFM"
+      ],
+      "departure_runway": [
+        "09",
+        "09",
+        "08L",
+        "08R",
+        "09",
+        "08R",
+        "08R",
+        "08L",
+        "08R",
+        "08R"
+      ]
+    },
+    "relative_path": "kmia/kmia_departure_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "AMX429.MIA.MEX.210807.1109.0045.TFM",
+        "CPA75.MIA.IAH.210807.1435.0112.TFM",
+        "AAL493.DCA.MIA.210807.2115.0123.TFM",
+        "LAN578.BOG.MIA.210807.1455.0012.TFM",
+        "AAL1046.ATL.MIA.210807.1250.0059.TFM",
+        "BOV766.VVI.MIA.210807.2317.0003.TFM",
+        "ENY3858.MIA.TLH.210807.1420.0023.TFM",
+        "AAL975.PLS.MIA.210807.2120.0114.TFM",
+        "ENY3997.MIA.RTB.210807.1605.0082.TFM",
+        "AAL1340.DCA.MIA.210807.1940.0180.TFM"
+      ]
+    },
+    "relative_path": "kmia/kmia_mfs_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "forecast_timestamp": [
+        "2020-11-03T07:00:00",
+        "2020-11-03T05:00:00",
+        "2020-11-01T11:00:00",
+        "2020-11-02T04:00:00",
+        "2020-11-01T13:00:00",
+        "2020-11-03T10:00:00",
+        "2020-11-03T08:00:00",
+        "2020-11-02T19:00:00",
+        "2020-11-02T08:00:00",
+        "2020-11-02T10:00:00"
+      ],
+      "temperature": [
+        71.0,
+        78.0,
+        81.0,
+        74.0,
+        79.0,
+        74.0,
+        76.0,
+        78.0,
+        77.0,
+        85.0
+      ],
+      "wind_direction": [
+        4.0,
+        2.0,
+        8.0,
+        5.0,
+        4.0,
+        4.0,
+        8.0,
+        36.0,
+        36.0,
+        5.0
+      ],
+      "wind_speed": [
+        7.0,
+        6.0,
+        15.0,
+        4.0,
+        12.0,
+        6.0,
+        3.0,
+        11.0,
+        10.0,
+        4.0
+      ],
+      "wind_gust": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        24.0,
+        23.0,
+        0.0
+      ],
+      "cloud_ceiling": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        5.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        6.0
+      ],
+      "visibility": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0
+      ],
+      "cloud": [
+        "OV",
+        "BK",
+        "BK",
+        "BK",
+        "BK",
+        "SC",
+        "SC",
+        "BK",
+        "BK",
+        "OV"
+      ],
+      "lightning_prob": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      "precip": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "relative_path": "kmia/kmia_lamp.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "AAL2524.MIA.DFW.201101.0103.0050.TFM",
+        "UAL697.MIA.EWR.201030.2223.0103.TFM",
+        "RPA4453.MIA.SDF.201031.0103.0016.TFM",
+        "RPA4309.MIA.ATL.201031.0649.0006.TFM_TFDM",
+        "RPA4543.MIA.CHS.201031.0133.0030.TFM",
+        "AAL2109.MIA.RDU.201031.0013.0038.TFM",
+        "AAL1142.MIA.JFK.201031.0013.0046.TFM",
+        "GTI77.MIA.BOG.201031.1838.0009.TFM",
+        "RPA4442.MIA.SAV.201031.0133.0024.TFM",
+        "N435QS.MIA.LGA.201101.0224.0001.TFM"
+      ],
+      "estimated_runway_departure_time": [
+        "2020-10-31 23:58:00",
+        "2020-11-01 00:07:00",
+        "2020-11-01 00:16:00",
+        "2020-11-01 00:37:00",
+        "2020-11-02 01:30:00",
+        "2020-11-01 02:18:00",
+        "2020-11-01 01:12:00",
+        "2020-10-31 22:43:00",
+        "2020-11-01 03:45:00",
+        "2020-11-01 00:00:00"
+      ]
+    },
+    "relative_path": "kmia/kmia_etd.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "EJM54.TCL.MIA.201103.0724.0001.TFM",
+        "UPS1332.SDF.MIA.201102.1731.0022.TFM",
+        "AAL2446.MBJ.MIA.201101.2023.0158.TFM",
+        "LTG9834.UIO.MIA.201102.0849.0003.TFM",
+        "ABX901.CVG.MIA.201102.0458.0019.TMA",
+        "SKZ7121.NAS.MIA.201102.1825.0009.TMA",
+        "RPA4407.LIR.MIA.201101.1933.0020.TFM",
+        "EJA537.HPN.MIA.201030.2159.0007.TFM",
+        "FDX303.MEM.MIA.201031.2159.0035.TFM",
+        "UPS357.MGA.MIA.201031.1950.0009.TFM"
+      ]
+    },
+    "relative_path": "kmia/kmia_first_position.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "AAL1132.CUN.MIA.201103.1333.0036.TFM",
+        "CSQ212.GCM.MIA.201102.1351.0014.TFM",
+        "DAL1355.ATL.MIA.201102.2023.0087.TFM",
+        "AAL636.MSY.MIA.201101.2058.0108.TFM",
+        "AAL342.CLT.MIA.201031.1408.0066.TFM",
+        "AAL2510.LGA.MIA.201101.1128.0013.TFM",
+        "FDX303.MEM.MIA.201101.2159.0042.TFM",
+        "AJT822.SDQ.MIA.201102.0938.0010.TFM",
+        "RPA4553.JAX.MIA.201103.1543.0065.TFM",
+        "AAL2440.BZE.MIA.201103.1938.0110.TFM"
+      ],
+      "arrival_runway": [
+        "08L",
+        "08R",
+        "08L",
+        "09",
+        "08L",
+        "09",
+        "08L",
+        "09",
+        "09",
+        "08L"
+      ]
+    },
+    "relative_path": "kmia/kmia_arrival_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SWQ9758.MIA.BJX.210808.1440.0166.TFM",
+        "AAL1192.MIA.ATL.210807.1740.0159.TFM",
+        "ENY3671.MSP.MIA.210807.1125.0105.TFM",
+        "AAL1664.SJU.MIA.210807.1500.0096.TFM",
+        "ENY3562.CVG.MIA.210807.1610.0146.TFM",
+        "N4B.MIA.APF.210807.1954.0131.TFM",
+        "ENY4255.RDU.MIA.210807.1635.0035.TFM",
+        "DAL1269.JFK.MIA.210807.1515.0119.TFM",
+        "JBU2886.MIA.LAX.210807.0230.0061.TFM",
+        "UPS1310.SDF.MIA.210808.0412.0005.TFM"
+      ]
+    },
+    "relative_path": "kmia/kmia_mfs_runway_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "airport_config": [
+        "D_8L_8R_9_A_8L_8R_9",
+        "D_8L_8R_9_A_8L_8R_9",
+        "D_8L_8R_9_A_8L_8R_9",
+        "D_8L_8R_9_A_8L_8R_9",
+        "D_8L_8R_9_A_8L_8R_9",
+        "D_8L_8R_9_A_8L_8R_9",
+        "D_12_8L_8R_9_A_12_8L_8R_9",
+        "D_8L_8R_A_8L_8R",
+        "D_8L_8R_9_A_8L_8R_9",
+        "D_8L_8R_A_8L_8R"
+      ]
+    },
+    "relative_path": "kmia/kmia_airport_config.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "UAL2205.EWR.MIA.201030.2208.0056.TFM",
+        "UAL2205.EWR.MIA.201030.2208.0056.TFM",
+        "ABX2246.BOG.MIA.201031.1747.0004.TMA",
+        "ETH3516.ZAZ.MIA.201030.1554.0059.TFM",
+        "TPA4012.BOG.MIA.201031.2031.0009.TMA",
+        "TPA4012.BOG.MIA.201031.2031.0009.TMA",
+        "ABX2246.BOG.MIA.201031.1747.0004.TMA",
+        "XAOAV.TLC.SDM.201031.1447.0018.TFM",
+        "DAL1422.ATL.MIA.201030.2338.0039.TFM",
+        "AJT5232.SJO.MIA.201031.2015.0012.TMA"
+      ],
+      "estimated_runway_arrival_time": [
+        "2020-11-01T01:39:58",
+        "2020-11-01T01:13:37",
+        "2020-11-01T01:07:16",
+        "2020-11-01T00:48:39",
+        "2020-11-01T01:39:58",
+        "2020-11-01T02:24:51",
+        "2020-11-01T02:37:15",
+        "2020-11-01T01:13:05",
+        "2020-11-01T01:50:01",
+        "2020-11-01T02:37:04"
+      ]
+    },
+    "relative_path": "kmia/kmia_tfm_estimated_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "AAL1357.MIA.JFK.210807.0055.0152.TFM",
+        "AAL2878.MIA.DCA.210808.1225.0234.TFM",
+        "FFT616.DEN.MIA.210807.0520.0010.TFM",
+        "AAL2700.CLT.MIA.210807.2210.0043.TFM",
+        "AAL1130.BOG.MIA.210807.1055.0153.TFM",
+        "AAL39.LHR.MIA.210808.1145.0037.TFM",
+        "AAL1664.MIA.SJU.210808.1125.0153.TFM",
+        "AAL543.CLT.MIA.210807.1545.0048.TFM",
+        "UAL708.MIA.EWR.210807.1815.0014.TFM",
+        "ENY4284.MIA.RDU.210807.1820.0112.TFM"
+      ]
+    },
+    "relative_path": "kmia/kmia_mfs_stand_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "ENY3680.BNA.MIA.210808.1555.0255.TFM",
+        "CSQ102.NAS.MIA.210809.1252.0026.TFM",
+        "AAL1124.BAQ.MIA.210808.1820.0047.TFM",
+        "AAL975.PLS.MIA.210807.2120.0114.TFM",
+        "AAL315.MIA.PHL.210807.1625.0138.TFM",
+        "DAL2691.MIA.DTW.210807.2305.0064.TFM",
+        "DPJ451.AVL.MIA.210808.0008.0003.TFM",
+        "JBU2295.EWR.MIA.210807.1125.0054.TFM",
+        "AAL1136.MIA.SXM.210807.1420.0029.TFM",
+        "FFT36.SJO.MIA.210808.2005.0027.TFM"
+      ]
+    },
+    "relative_path": "kmia/kmia_mfs_stand_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "UAL2839.FCO.ORD.201030.1759.0085.TFM",
+        "UAL248.DEN.ORD.201030.2349.0026.TFM",
+        "ABW407.AMS.ORD.201031.2305.0007.TFM",
+        "LOT7903.WAW.ORD.201031.1518.0015.TFM",
+        "QTR8184.JFK.ORD.201030.2328.0035.TFM",
+        "UAL2546.MHK.ORD.201031.0034.0015.TFM",
+        "UAL2839.FCO.ORD.201030.1759.0085.TFM",
+        "KAL283.ANC.ORD.201030.2313.0035.TFM",
+        "NCA160.ANC.ORD.201031.1813.0001.TFM",
+        "EVA056.TPE.ORD.201031.1018.0003.TFM"
+      ],
+      "estimated_runway_arrival_time": [
+        "2020-11-01T03:37:52",
+        "2020-11-01T04:24:10",
+        "2020-11-01T04:03:43",
+        "2020-11-01T01:23:13",
+        "2020-11-01T03:37:59",
+        "2020-11-01T02:16:20",
+        "2020-11-01T02:18:04",
+        "2020-11-01T00:39:26",
+        "2020-11-01T01:10:13",
+        "2020-11-01T03:09:32"
+      ]
+    },
+    "relative_path": "kord/kord_tfm_estimated_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "LOT7903.WAW.ORD.201031.1518.0015.TFM",
+        "EVA056.TPE.ORD.201031.1018.0003.TFM",
+        "LOT7903.WAW.ORD.201031.1518.0015.TFM",
+        "NCA160.ANC.ORD.201031.1813.0001.TFM",
+        "DAL410.LGA.ORD.201030.2253.0097.TFM",
+        "BOX414.FRA.ORD.201031.1543.0007.TFM",
+        "DAL410.LGA.ORD.201030.2253.0097.TFM",
+        "QTR8184.JFK.ORD.201030.2328.0035.TFM",
+        "EVA056.TPE.ORD.201031.1018.0003.TFM",
+        "DAL410.LGA.ORD.201030.2253.0097.TFM"
+      ],
+      "scheduled_runway_arrival_time": [
+        "2020-11-01T02:14:55",
+        "2020-11-01T02:21:31",
+        "2020-11-01T03:32:23",
+        "2020-11-01T02:15:41",
+        "2020-11-01T02:15:40",
+        "2020-11-01T01:03:41",
+        "2020-11-01T03:30:18",
+        "2020-11-01T00:27:57",
+        "2020-11-01T00:28:50",
+        "2020-11-01T02:15:18"
+      ]
+    },
+    "relative_path": "kord/kord_tbfm_scheduled_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "GTI7145.ORD.NRT.201102.0539.0004.TMA",
+        "JBU906.ORD.JFK.201031.1613.0055.TFM",
+        "GJS4434.ORD.MEM.201101.0139.0003.TFM",
+        "AWI3882.ORD.HSV.201101.1453.0114.TFM",
+        "UAL1754.ORD.IAH.201101.1153.0210.TFM",
+        "SKW4738.ORD.FAR.201031.1509.0013.TFM",
+        "UAL2037.ORD.SAN.201031.1504.0014.TFM",
+        "SKW5489.ORD.ATL.201031.1254.0088.TFM",
+        "RPA3536.ORD.PBI.201031.1653.0092.TFM",
+        "DLH431.ORD.FRA.201031.2203.0036.TFM"
+      ],
+      "departure_runway": [
+        "28R",
+        "27L",
+        "28R",
+        "27L",
+        "28R",
+        "22L",
+        "22L",
+        "28R",
+        "22L",
+        "28R"
+      ]
+    },
+    "relative_path": "kord/kord_departure_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "airport_config": [
+        "D_22L_28C_A_22R_28C",
+        "D_22L_28R_A_27L_27R_28C",
+        "D_28R_A_28C",
+        "D_22L_28R_A_27L_27R_28C",
+        "D_22L_28C_A_28C",
+        "D_10L_9R_A_28C",
+        "D_22L_28R_A_27L_27R_28C",
+        "D_22L_28R_A_28C",
+        "D_10L_9R_A_10C_10R_9L",
+        "D_22L_28R_A_27L_27R_28C"
+      ]
+    },
+    "relative_path": "kord/kord_airport_config.csv.bz2"
+  },
+  {
+    "values": {
+      "forecast_timestamp": [
+        "2020-11-01T07:00:00",
+        "2020-11-02T16:00:00",
+        "2020-11-03T16:00:00",
+        "2020-11-02T13:00:00",
+        "2020-11-02T10:00:00",
+        "2020-11-02T07:00:00",
+        "2020-11-01T06:00:00",
+        "2020-11-02T02:00:00",
+        "2020-11-02T06:00:00",
+        "2020-11-02T17:00:00"
+      ],
+      "temperature": [
+        26.0,
+        48.0,
+        34.0,
+        36.0,
+        35.0,
+        28.0,
+        30.0,
+        38.0,
+        27.0,
+        35.0
+      ],
+      "wind_direction": [
+        30.0,
+        24.0,
+        24.0,
+        30.0,
+        31.0,
+        30.0,
+        25.0,
+        31.0,
+        24.0,
+        23.0
+      ],
+      "wind_speed": [
+        6.0,
+        19.0,
+        10.0,
+        19.0,
+        8.0,
+        16.0,
+        14.0,
+        17.0,
+        14.0,
+        6.0
+      ],
+      "wind_gust": [
+        0.0,
+        21.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        28.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cloud_ceiling": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0
+      ],
+      "visibility": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0
+      ],
+      "cloud": [
+        "CL",
+        "SC",
+        "FW",
+        "BK",
+        "FW",
+        "FW",
+        "CL",
+        "FW",
+        "CL",
+        "FW"
+      ],
+      "lightning_prob": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      "precip": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "relative_path": "kord/kord_lamp.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "RPA3595.BUF.ORD.201031.1154.0017.TFM",
+        "AWI3959.SBN.ORD.201031.2118.0059.TFM",
+        "UAL1467.IAD.ORD.201031.1608.0033.TFM",
+        "BTQ831.IWD.ORD.201101.1034.0002.TMA",
+        "SKW5652.IND.ORD.201031.2308.0073.TFM",
+        "AWI3727.CHA.ORD.201031.2248.0096.TFM",
+        "BTQ831.IWD.ORD.201101.1034.0002.TMA",
+        "SKW3221.BNA.ORD.201031.1813.0049.TFM",
+        "BOX414.FRA.ORD.201101.1945.0010.TFM",
+        "RPA3663.RIC.ORD.201031.2233.0097.TFM"
+      ]
+    },
+    "relative_path": "kord/kord_first_position.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SKW5043.CMX.ORD.210718.1026.0049.TFM",
+        "NKS762.ATL.ORD.210718.1056.0067.TFM",
+        "SKW5106.SHD.ORD.210718.1710.0029.TFM",
+        "ENY3705.MHK.ORD.210718.1901.0042.TFM",
+        "UAL407.ORD.DEN.210718.1936.0075.TFM",
+        "SWA1810.ORD.BNA.210718.2006.0121.TFM",
+        "NCA130.ANC.ORD.210719.0544.0004.TFM",
+        "AAL1848.ORD.PDX.210718.1311.0093.TFM",
+        "SKW4629.ORD.BJX.210718.1351.0045.TFM",
+        "ENY4378.ORD.BMI.210718.1451.0026.TFM"
+      ]
+    },
+    "relative_path": "kord/kord_mfs_runway_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SKW5135.RST.ORD.210718.2226.0098.TFM",
+        "UAL2017.ORD.PHX.210718.1756.0131.TFM",
+        "RPA4719.ORD.ORF.210718.0136.0023.TFM",
+        "UAL1497.LAX.ORD.210718.0725.0021.TFM",
+        "AAL395.SJU.ORD.210717.1921.0101.TFM",
+        "AWI3860.CID.ORD.210718.2046.0088.TFM",
+        "UAL2017.ORD.PHX.210718.1756.0131.TFM",
+        "AAL1079.AUS.ORD.210718.1811.0116.TFM",
+        "AAL871.ORD.JAC.210718.1301.0106.TFM",
+        "AAL1378.ORD.ABQ.210718.1811.0130.TFM"
+      ]
+    },
+    "relative_path": "kord/kord_mfs_stand_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SKW5026.ORD.SUX.210718.1446.0036.TFM",
+        "AAL2745.SAN.ORD.210718.1556.0133.TFM",
+        "RPA5697.LGA.ORD.210718.0011.0044.TFM",
+        "ENY3920.GRB.ORD.210718.1216.0025.TFM",
+        "KAL288.ORD.YHZ.210718.1636.0050.TFM",
+        "CES7718.ORD.PVG.210719.1621.0095.TMA",
+        "ANA12.NRT.ORD.210718.0756.0024.TFM",
+        "RPA3463.DFW.ORD.210718.1526.0055.TFM",
+        "ABW103.AMS.ORD.210719.1528.0009.TFM",
+        "SWA4212.ORD.TPA.210718.0041.0143.TFM"
+      ]
+    },
+    "relative_path": "kord/kord_mfs_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "UAL2608.IAD.ORD.210718.2136.0024.TFM",
+        "RPA3308.ORD.GRR.210718.2122.0008.TFM",
+        "RPA4996.STL.ORD.210718.2006.0060.TFM",
+        "GJS4427.PIT.ORD.210717.2216.0083.TFM",
+        "ENY3603.CVG.ORD.210718.1451.0070.TFM",
+        "RPA3542.LAN.ORD.210718.0956.0051.TFM",
+        "GJS4554.ORD.MSN.210718.1551.0126.TFM",
+        "GJS4521.ORD.MBS.210717.2346.0019.TFM",
+        "SKW5128.DEC.ORD.210718.1056.0042.TFM",
+        "AAL1647.MCO.ORD.210718.1431.0111.TFM"
+      ]
+    },
+    "relative_path": "kord/kord_mfs_stand_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "GJS4381.GSO.ORD.201101.1158.0073.TFM",
+        "UAL265.IAH.ORD.201031.2158.0044.TFM",
+        "AAL1232.MCO.ORD.201031.1713.0037.TFM",
+        "SKW3028.SDF.ORD.201031.2318.0084.TFM",
+        "UAL2385.DEN.ORD.201031.1838.0046.TFM",
+        "UAL1682.SFO.ORD.201031.0643.0013.TFM",
+        "NKS606.FLL.ORD.201031.2003.0044.TFM",
+        "AWI3773.ERI.ORD.201031.1153.0043.TFM",
+        "GJS4451.CID.ORD.201101.1413.0075.TFM",
+        "UAL318.SAN.ORD.201031.1454.0112.TFM"
+      ],
+      "arrival_runway": [
+        "28C",
+        "28C",
+        "27R",
+        "28C",
+        "27R",
+        "28C",
+        "27R",
+        "28C",
+        "27L",
+        "27L"
+      ]
+    },
+    "relative_path": "kord/kord_arrival_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "EIN122.ORD.DUB.201030.2243.0029.TFM",
+        "UAL2329.ORD.EWR.201030.2308.0066.TFM",
+        "UAL582.ORD.SAN.201030.2308.0067.TFM",
+        "DLH431.ORD.FRA.201030.2204.0021.TFM",
+        "SKW5761.ORD.COS.201030.2308.0078.TFM",
+        "UAL931.ORD.LHR.201031.0013.0032.TFM",
+        "UAL2202.ORD.EWR.201031.0058.0033.TFM",
+        "UAL2485.ORD.DEN.201031.0039.0007.TFM",
+        "AMX687.ORD.MEX.201030.2128.0064.TFM",
+        "AMX687.ORD.MEX.201030.2128.0064.TFM"
+      ],
+      "estimated_runway_departure_time": [
+        "2020-11-02 02:02:00",
+        "2020-11-02 02:10:00",
+        "2020-11-02 00:23:00",
+        "2020-10-31 23:16:00",
+        "2020-11-02 02:20:00",
+        "2020-10-31 23:28:00",
+        "2020-11-02 02:12:00",
+        "2020-10-31 23:12:00",
+        "2020-10-31 22:42:00",
+        "2020-10-31 23:25:00"
+      ]
+    },
+    "relative_path": "kord/kord_etd.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "UAL604.PHX.DEN.201110.1753.0047.TFM",
+        "UPS2906.ABQ.PHX.201111.0851.0006.TFM",
+        "AAL2300.TPA.PHX.201110.1058.0011.TFM",
+        "SWA2994.PHX.OKC.201110.0258.0026.TFM",
+        "SWA4090.MDW.PHX.201110.1353.0044.TFM",
+        "SWA2703.PHX.DEN.201110.0218.0007.TFM",
+        "AAL1561.MSP.PHX.201110.1153.0241.TFM",
+        "SWA605.PHX.BUR.201110.0253.0072.TFM",
+        "AAL1931.SMF.PHX.201110.0023.0098.TFM",
+        "UPS2888.ABQ.PHX.201111.0831.0003.TFM"
+      ]
+    },
+    "relative_path": "kphx/kphx_mfs_stand_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "airport_config": [
+        "D_7L_A_7R_8",
+        "D_7L_A_7L_7R",
+        "D_7L_A_7R_8",
+        "D_7L_8_A_7L_8",
+        "D_7L_A_7R_8",
+        "D_25R_A_25L_26",
+        "D_7L_A_7R_8",
+        "D_25R_A_25L_26",
+        "D_7L_A_7R_8",
+        "D_7L_A_7R_8"
+      ]
+    },
+    "relative_path": "kphx/kphx_airport_config.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "LN62GA.WTR.PHX.201112.0034.0013.TMA",
+        "SKW3843.PHX.LAX.201111.0153.0078.TFM",
+        "UAL1845.DEN.PHX.201110.2108.0069.TFM",
+        "SKW3464.PHX.SFO.201110.0223.0017.TFM",
+        "SKW3126.RDM.PHX.201110.1353.0128.TFM",
+        "AAL692.PHX.HNL.201110.1813.0109.TFM",
+        "SWA2294.BNA.PHX.201110.1333.0020.TFM",
+        "SWQ1814.RNO.PHX.201110.2001.0002.TFM",
+        "SWA1298.PHX.PVR.201110.1903.0020.TFM",
+        "CTA11.HLI.PHX.201111.1250.0026.TFM"
+      ]
+    },
+    "relative_path": "kphx/kphx_mfs_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "FFT2155.PHX.LAS.201101.0353.0030.TFM",
+        "SWQ1814.PHX.LAX.201101.0902.0004.TMA",
+        "SWA2510.PHX.PDX.201102.1743.0045.TFM",
+        "AAL1560.PHX.MSP.201101.0243.0057.TFM",
+        "AAL1283.PHX.PHL.201101.0008.0038.TFM",
+        "AAL498.PHX.CLT.201031.1803.0061.TFM",
+        "AAL482.PHX.DEN.201101.1823.0032.TFM",
+        "SWA3343.PHX.SNA.201031.2348.0075.TFM",
+        "SKW2982.PHX.RDM.201102.1723.0018.TFM",
+        "SKW3235.PHX.MFR.201101.0248.0012.TFM"
+      ],
+      "departure_runway": [
+        "25L",
+        "25R",
+        "25R",
+        "07L",
+        "07L",
+        "07L",
+        "07R",
+        "07L",
+        "07L",
+        "07L"
+      ]
+    },
+    "relative_path": "kphx/kphx_departure_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "forecast_timestamp": [
+        "2020-11-01T06:00:00",
+        "2020-11-02T14:00:00",
+        "2020-11-02T06:00:00",
+        "2020-11-02T22:00:00",
+        "2020-11-02T22:00:00",
+        "2020-11-03T01:00:00",
+        "2020-11-02T06:00:00",
+        "2020-11-02T01:00:00",
+        "2020-11-02T06:00:00",
+        "2020-11-02T01:00:00"
+      ],
+      "temperature": [
+        76.0,
+        73.0,
+        78.0,
+        96.0,
+        73.0,
+        74.0,
+        83.0,
+        65.0,
+        77.0,
+        71.0
+      ],
+      "wind_direction": [
+        10.0,
+        10.0,
+        5.0,
+        7.0,
+        9.0,
+        10.0,
+        24.0,
+        12.0,
+        10.0,
+        9.0
+      ],
+      "wind_speed": [
+        5.0,
+        5.0,
+        10.0,
+        4.0,
+        6.0,
+        5.0,
+        6.0,
+        7.0,
+        16.0,
+        16.0
+      ],
+      "wind_gust": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cloud_ceiling": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0
+      ],
+      "visibility": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0
+      ],
+      "cloud": [
+        "BK",
+        "BK",
+        "BK",
+        "OV",
+        "BK",
+        "BK",
+        "OV",
+        "BK",
+        "BK",
+        "BK"
+      ],
+      "lightning_prob": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      "precip": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "relative_path": "kphx/kphx_lamp.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SKW3051.YUM.PHX.201109.2343.0075.TFM",
+        "SWA1461.SJC.PHX.201110.2118.0012.TFM",
+        "CFS7775.FLG.PHX.201111.2158.0102.TFM",
+        "AAL428.CLT.PHX.201109.1953.0149.TFM",
+        "SKW3158.PHX.HMO.201110.1723.0078.TFM",
+        "CFS4750.FLG.PHX.201111.1637.0004.TMA",
+        "AAL1699.PHX.MSY.201110.1728.0036.TFM",
+        "SKW3159.FAT.PHX.201110.0023.0056.TFM",
+        "LN311VM.YUM.PHX.201111.1219.0007.TMA",
+        "ATN3409.AFW.PHX.201111.0918.0011.TFM"
+      ]
+    },
+    "relative_path": "kphx/kphx_mfs_runway_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "ASA928.SEA.PHX.201101.1753.0078.TFM",
+        "AAL1885.DFW.PHX.201031.2228.0087.TFM",
+        "ACA1054.YVR.PHX.201031.1638.0094.TFM",
+        "AAL1587.JFK.PHX.201101.1923.0147.TFM",
+        "SWA2627.MSY.PHX.201101.1654.0092.TFM",
+        "BTQ901B.ABQ.PHX.201102.1752.0023.TFM",
+        "SWA2476.DAL.PHX.201031.2248.0074.TFM",
+        "SKW3021.DSM.PHX.201101.2153.0034.TFM",
+        "ASH5928.LGB.PHX.201101.1513.0058.TFM",
+        "SWA1523.MDW.PHX.201031.2313.0018.TFM"
+      ]
+    },
+    "relative_path": "kphx/kphx_first_position.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "UAL1470.IAD.PHX.201030.2208.0050.TFM",
+        "UAL1470.IAD.PHX.201030.2208.0050.TFM",
+        "SWA2267.DEN.PHX.201030.2338.0053.TFM",
+        "DAL946.DTW.PHX.201030.2238.0056.TFM",
+        "UAL765.ORD.PHX.201030.2243.0060.TFM",
+        "AAL899.LAX.PHX.201030.2359.0011.TFM",
+        "UAL1470.IAD.PHX.201030.2208.0050.TFM",
+        "SWA2267.DEN.PHX.201030.2338.0053.TFM",
+        "SWA2330.MCI.PHX.201030.2258.0061.TFM",
+        "SWA1523.MDW.PHX.201030.2213.0033.TFM"
+      ],
+      "scheduled_runway_arrival_time": [
+        "2020-11-01T01:10:13",
+        "2020-11-01T02:16:56",
+        "2020-11-01T00:58:10",
+        "2020-11-01T01:17:55",
+        "2020-11-01T01:54:57",
+        "2020-11-01T02:20:36",
+        "2020-11-01T02:43:54",
+        "2020-11-01T01:47:00",
+        "2020-11-01T02:15:02",
+        "2020-11-01T02:16:56"
+      ]
+    },
+    "relative_path": "kphx/kphx_tbfm_scheduled_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "FDX783.MEM.PHX.201030.2300.0014.TFM",
+        "QXE2316.SFO.PHX.201030.2223.0051.TFM",
+        "DAL871.ATL.PHX.201030.2144.0029.TFM",
+        "SWA169.DAL.PHX.201030.2349.0030.TFM",
+        "DAL871.ATL.PHX.201030.2144.0029.TFM",
+        "UAL765.ORD.PHX.201030.2243.0060.TFM",
+        "ASA930.SEA.PHX.201030.2228.0056.TFM",
+        "SWA4234.SAT.PHX.201030.2334.0009.TFM",
+        "UAL765.ORD.PHX.201030.2243.0060.TFM",
+        "SWA1906.HOU.PHX.201030.2243.0064.TFM"
+      ],
+      "estimated_runway_arrival_time": [
+        "2020-11-01T00:57:09",
+        "2020-11-01T01:38:07",
+        "2020-11-01T00:28:43",
+        "2020-11-01T01:41:35",
+        "2020-11-01T02:39:05",
+        "2020-11-01T01:04:59",
+        "2020-11-01T01:44:51",
+        "2020-11-01T00:29:17",
+        "2020-11-01T00:53:09",
+        "2020-11-01T00:56:33"
+      ]
+    },
+    "relative_path": "kphx/kphx_tfm_estimated_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "ASH5865.TUS.PHX.201101.1443.0087.TFM",
+        "SKW5512.LAX.PHX.201102.0243.0050.TFM",
+        "ASA930.SEA.PHX.201031.2328.0067.TFM",
+        "SKW3138.OMA.PHX.201101.1243.0022.TFM",
+        "ASH5928.LGB.PHX.201101.1513.0058.TFM",
+        "UAL1845.DEN.PHX.201101.2108.0050.TFM",
+        "FFT1427.ORD.PHX.201031.1254.0043.TFM",
+        "AAL1983.MIA.PHX.201031.1054.0024.TFM",
+        "AAL655.PHL.PHX.201031.2054.0091.TFM",
+        "SWA9001.STL.PHX.201102.0910.0003.TMA"
+      ],
+      "arrival_runway": [
+        "07R",
+        "08",
+        "07R",
+        "07R",
+        "08",
+        "08",
+        "07L",
+        "07R",
+        "08",
+        "07R"
+      ]
+    },
+    "relative_path": "kphx/kphx_arrival_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SWA1659.PHX.DEN.201101.0039.0014.TMA",
+        "AAL633.PHX.DFW.201101.0243.0062.TFM",
+        "AAL599.PHX.CLT.201101.0853.0009.TFM",
+        "DAL694.PHX.SEA.201031.0029.0015.TFM",
+        "AAL493.PHX.AUS.201031.1733.0069.TFM",
+        "SKW3214.PHX.SBP.201101.0143.0058.TFM",
+        "AAL2054.PHX.MIA.201031.0853.0021.TFM",
+        "FDX601.PHX.MEM.201031.1430.0016.TFM",
+        "AAL655.PHX.PHL.201031.1518.0039.TFM",
+        "AAL390.PHX.LAX.201031.0039.0020.TFM"
+      ],
+      "estimated_runway_departure_time": [
+        "2020-11-01 13:41:00",
+        "2020-11-02 03:17:00",
+        "2020-10-31 22:10:00",
+        "2020-11-01 10:50:00",
+        "2020-11-01 00:16:00",
+        "2020-11-01 01:53:00",
+        "2020-11-01 14:12:00",
+        "2020-11-01 00:58:00",
+        "2020-11-01 00:55:00",
+        "2020-10-31 20:43:00"
+      ]
+    },
+    "relative_path": "kphx/kphx_etd.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "GDG495.HWD.SDX.201110.0451.0026.TFM",
+        "N57SG.SLN.PHX.201110.1951.0065.TFM",
+        "ASH5782.CID.PHX.201111.1158.0039.TFM",
+        "DCM2217.MAE.SCF.201111.1951.0100.TFM",
+        "SWA2021.SJD.PHX.201111.2153.0113.TFM",
+        "SWA4306.OAK.PHX.201110.1508.0086.TFM",
+        "SKW2968.SLC.PHX.201110.0018.0025.TFM",
+        "AAL1853.PHX.SAT.201110.1823.0107.TFM",
+        "DAL1547.PHX.SEA.201111.0118.0039.TFM",
+        "SWA122.PHX.LAS.201111.1743.0016.TFM"
+      ]
+    },
+    "relative_path": "kphx/kphx_mfs_stand_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "CFS8511.SEA.MVW.210818.1314.0004.TFM",
+        "QXE2306.SEA.PSC.210817.2114.0103.TFM",
+        "ASA1199.SAN.SEA.210817.0149.0052.TFM",
+        "QXE2477.SEA.GEG.210817.0544.0009.TFM",
+        "ASA788.SEA.SLC.210817.1624.0043.TFM",
+        "ASA420.SEA.ONT.210817.1824.0162.TFM",
+        "ATN3478.SEA.BWI.210818.0754.0004.TFM",
+        "SWA1906.DEN.SEA.210817.0134.0047.TFM",
+        "ASA927.PHX.SEA.210817.1644.0074.TFM",
+        "ASA1146.SEA.AUS.210817.0054.0148.TFM"
+      ]
+    },
+    "relative_path": "ksea/ksea_mfs_runway_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "ASA1066.SEA.ABQ.210817.1659.0097.TFM",
+        "ASA62.KTN.SEA.210817.2144.0059.TFM",
+        "ASA1107.FLL.SEA.210816.2224.0086.TFM",
+        "SKW4053.PDX.SEA.210817.1814.0030.TFM",
+        "QXE2315.SEA.RDM.210817.0039.0102.TFM",
+        "ASA171.LAS.SEA.210817.1554.0224.TFM",
+        "ASA745.ATL.SEA.210816.2139.0103.TFM",
+        "ASA605.LAS.SEA.210817.1854.0107.TFM",
+        "ASA597.SJC.SEA.210817.2144.0062.TFM",
+        "UAL2323.SEA.EWR.210817.1354.0340.TFM"
+      ]
+    },
+    "relative_path": "ksea/ksea_mfs_stand_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SKW3467.SEA.RNO.201101.1623.0089.TFM",
+        "ASA1332.SEA.SFO.201102.0523.0019.TFM",
+        "CLX46U.SEA.YYC.201103.0120.0011.TFM",
+        "ASA8.SEA.EWR.201101.1713.0052.TFM",
+        "QXE2119.SEA.RDM.201031.1903.0042.TFM",
+        "ASA676.SEA.OMA.201031.1653.0102.TFM",
+        "ASA398.SEA.LAX.201101.2323.0101.TFM",
+        "FDX1802.SEA.OAK.201102.0600.0008.TFM",
+        "ASA922.SEA.BWI.201031.1609.0013.TFM",
+        "SKW3433.SEA.TUS.201101.1658.0043.TFM"
+      ],
+      "departure_runway": [
+        "16L",
+        "34R",
+        "34R",
+        "16L",
+        "34R",
+        "16L",
+        "16L",
+        "34R",
+        "16L",
+        "34R"
+      ]
+    },
+    "relative_path": "ksea/ksea_departure_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "ASA801.SLC.SEA.210816.2314.0030.TFM",
+        "DAL693.SEA.MCO.210817.1529.0053.TFM",
+        "DAL344.SEA.LIH.210817.2024.0135.TFM",
+        "FDX568.SEA.OAK.210817.0319.0024.TFM",
+        "DAL2725.PDX.SEA.210816.2034.0135.TFM",
+        "ASA597.SJC.SEA.210817.2144.0062.TFM",
+        "SKW3688.RDM.SEA.210817.1204.0051.TFM",
+        "QXE2227.PDX.SEA.210817.1704.0031.TFM",
+        "DAL891.SEA.LAX.210817.1824.0141.TFM",
+        "ASA2.SEA.DCA.210817.2044.0065.TFM"
+      ]
+    },
+    "relative_path": "ksea/ksea_mfs_stand_departure_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "ASA729.STL.SEA.201030.1958.0078.TFM",
+        "ASA699.IAH.SEA.201030.2238.0063.TFM",
+        "ASA729.STL.SEA.201030.1958.0078.TFM",
+        "ASA417.PIT.SEA.201030.2043.0071.TFM",
+        "ASA755.MSY.SEA.201030.2208.0077.TFM",
+        "ASA203.PVR.SEA.201030.2013.0054.TFM",
+        "ASA765.BWI.SEA.201030.2113.0054.TFM",
+        "DAL573.LAX.SEA.201030.2213.0057.TFM",
+        "ASA17.PHL.SEA.201030.2043.0063.TFM",
+        "ASA461.LAX.SEA.201030.2243.0040.TFM"
+      ],
+      "scheduled_runway_arrival_time": [
+        "2020-11-01T03:06:35",
+        "2020-11-01T00:17:36",
+        "2020-11-01T02:52:11",
+        "2020-11-01T01:58:19",
+        "2020-11-01T02:43:37",
+        "2020-11-01T02:45:05",
+        "2020-11-01T01:56:54",
+        "2020-11-01T00:57:09",
+        "2020-11-01T03:16:42",
+        "2020-11-01T03:16:42"
+      ]
+    },
+    "relative_path": "ksea/ksea_tbfm_scheduled_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "QXE2414.RDM.SEA.201101.2048.0022.TFM",
+        "ATN3401.ILN.SEA.201103.0411.0002.TMA",
+        "SWA1507.OAK.SEA.201101.0238.0071.TFM",
+        "UAL326.IAD.SEA.201101.2248.0061.TFM",
+        "ASA756.DFW.SEA.201101.1629.0067.TFM",
+        "ASA443.ATL.SEA.201101.1254.0022.TFM",
+        "QXE2551.PDX.SEA.201101.2338.0072.TFM",
+        "QXE2207.PSC.SEA.201101.1708.0037.TFM",
+        "SKW3831.BOI.SEA.201101.2358.0044.TFM",
+        "UAL1413.IAH.SEA.201102.0143.0018.TFM"
+      ],
+      "arrival_runway": [
+        "16R",
+        "16R",
+        "16R",
+        "34L",
+        "34L",
+        "34R",
+        "34L",
+        "34L",
+        "34L",
+        "34L"
+      ]
+    },
+    "relative_path": "ksea/ksea_arrival_runway.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "QXE2225.OAK.SEA.210817.1739.0157.TFM",
+        "ASA705.LAX.SEA.210817.0244.0047.TFM",
+        "DAL327.SEA.JFK.210817.1824.0138.TFM",
+        "SKW3425.SEA.FAT.210817.1659.0067.TFM",
+        "ASA457.BZN.SEA.210817.2134.0080.TFM",
+        "DAL417.MCO.SEA.210816.2224.0194.TFM",
+        "UAL2223.DEN.SEA.210817.0149.0024.TFM",
+        "AAL710.SEA.PHX.210817.2309.0085.TFM",
+        "ABX904.CVG.SEA.210818.0824.0013.TFM",
+        "QXE2441.SEA.RNO.210817.1459.0071.TFM"
+      ]
+    },
+    "relative_path": "ksea/ksea_mfs_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "ASA745.ATL.SEA.201030.2108.0036.TFM",
+        "ASA1337.MSP.SEA.201030.2128.0063.TFM",
+        "ASA148.DAL.SEA.201030.2039.0031.TFM",
+        "DAL573.LAX.SEA.201030.2213.0057.TFM",
+        "ASA201.SJD.SEA.201030.2138.0054.TFM",
+        "ASA15.BOS.SEA.201030.2039.0022.TFM",
+        "SKW3538.SJC.SEA.201031.0023.0042.TFM",
+        "ASA1107.FLL.SEA.201030.2228.0054.TFM",
+        "ASA523.TPA.SEA.201030.2103.0040.TFM",
+        "AAL2936.CLT.SEA.201030.2024.0037.TFM"
+      ],
+      "estimated_runway_arrival_time": [
+        "2020-11-01T02:59:00",
+        "2020-11-01T01:39:07",
+        "2020-11-01T02:37:17",
+        "2020-11-01T04:49:38",
+        "2020-11-01T03:08:58",
+        "2020-11-01T00:42:50",
+        "2020-11-01T01:00:13",
+        "2020-11-01T04:24:11",
+        "2020-11-01T02:34:05",
+        "2020-11-01T01:00:13"
+      ]
+    },
+    "relative_path": "ksea/ksea_tfm_estimated_runway_arrival_time.csv.bz2"
+  },
+  {
+    "values": {
+      "forecast_timestamp": [
+        "2020-11-02T01:00:00",
+        "2020-11-02T12:00:00",
+        "2020-11-02T03:00:00",
+        "2020-11-02T19:00:00",
+        "2020-11-03T02:00:00",
+        "2020-11-02T01:00:00",
+        "2020-11-02T12:00:00",
+        "2020-11-02T05:00:00",
+        "2020-11-01T20:00:00",
+        "2020-11-01T13:00:00"
+      ],
+      "temperature": [
+        46.0,
+        54.0,
+        46.0,
+        58.0,
+        48.0,
+        43.0,
+        51.0,
+        52.0,
+        50.0,
+        53.0
+      ],
+      "wind_direction": [
+        9.0,
+        1.0,
+        16.0,
+        22.0,
+        2.0,
+        9.0,
+        20.0,
+        35.0,
+        30.0,
+        14.0
+      ],
+      "wind_speed": [
+        3.0,
+        5.0,
+        5.0,
+        4.0,
+        3.0,
+        6.0,
+        5.0,
+        6.0,
+        5.0,
+        4.0
+      ],
+      "wind_gust": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "cloud_ceiling": [
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0
+      ],
+      "visibility": [
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0,
+        7.0
+      ],
+      "cloud": [
+        "CL",
+        "CL",
+        "CL",
+        "CL",
+        "CL",
+        "CL",
+        "FW",
+        "CL",
+        "SC",
+        "FW"
+      ],
+      "lightning_prob": [
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N",
+        "N"
+      ],
+      "precip": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "relative_path": "ksea/ksea_lamp.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "SKW3502.SEA.SJC.201031.0303.0013.TFM",
+        "ASA97.SEA.ANC.201030.2124.0050.TFM",
+        "DAL142.SEA.AMS.201030.2113.0074.TFM",
+        "QXE2083.SEA.RNO.201030.2313.0047.TFM",
+        "QXE2468.SEA.GEG.201101.0128.0028.TFM",
+        "ASA20.SEA.MCO.201030.2233.0059.TFM",
+        "QXE2340.SEA.MSO.201031.0423.0027.TFM",
+        "QXE2582.SEA.SMF.201031.0023.0040.TFM",
+        "ASA1462.SEA.SAN.201101.0128.0065.TFM",
+        "ASA1092.SEA.LAX.201031.0133.0012.TFM"
+      ],
+      "estimated_runway_departure_time": [
+        "2020-11-01 03:04:00",
+        "2020-11-01 00:28:00",
+        "2020-10-31 22:51:00",
+        "2020-11-01 02:17:00",
+        "2020-10-31 22:43:00",
+        "2020-11-01 02:58:00",
+        "2020-11-01 02:39:00",
+        "2020-11-01 01:07:00",
+        "2020-11-01 02:44:00",
+        "2020-11-01 02:55:00"
+      ]
+    },
+    "relative_path": "ksea/ksea_etd.csv.bz2"
+  },
+  {
+    "values": {
+      "airport_config": [
+        "D_16L_A_16L_16R",
+        "D_16C_A_16L_16R",
+        "D_16L_A_16L_16R",
+        "D_16L_A_16L_16R",
+        "D_34R_A_34L_34R",
+        "D_16L_A_16L_16R",
+        "D_16L_A_16L_16R",
+        "D_16L_A_16L_16R",
+        "D_16L_A_16L_16R",
+        "D_16L_A_16L_16R"
+      ]
+    },
+    "relative_path": "ksea/ksea_airport_config.csv.bz2"
+  },
+  {
+    "values": {
+      "gufi": [
+        "ASA1349.LAS.SEA.201031.0039.0013.TFM",
+        "AAL2240.DFW.SEA.201031.1828.0044.TFM",
+        "DAL442.HNL.SEA.201101.0713.0012.TFM",
+        "DAL745.DEN.SEA.201102.0118.0029.TFM",
+        "ASA1382.PSP.SEA.201031.1524.0132.TFM",
+        "QXE2385.RNO.SEA.201101.0003.0031.TFM",
+        "SKW3481.FAT.SEA.201031.0208.0022.TFM",
+        "SKW3566.SFO.SEA.201101.1423.0076.TFM",
+        "ASA925.PHX.SEA.201101.1614.0008.TFM",
+        "DAL701.SAN.SEA.201101.1939.0059.TFM"
+      ]
+    },
+    "relative_path": "ksea/ksea_first_position.csv.bz2"
+  }
+]

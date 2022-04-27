@@ -1,0 +1,1235 @@
+chmod -R 0777 submission/
+docker run \
+	-it \
+	--gpus all \
+	--network none \
+	--rm \
+	--name nasaairportconfig-submission \
+	--mount type=bind,source="/home/robert/projects/nasa-airport-config-runtime"/runtime/data,target=/clouddata,readonly \
+	--mount type=bind,source="/home/robert/projects/nasa-airport-config-runtime"/submission,target=/codeexecution/submission \
+	--shm-size 8g \
+	3ec7a0e31941
++ exit_code=0
++ tee /codeexecution/submission/log.txt
++ cd /codeexecution
++ echo 'Unpacking submission'
+Unpacking submission
++ unzip -n ./submission/submission.zip -d ./
+Archive:  ./submission/submission.zip
+  inflating: ./main.py               
++ '[' -f main.py ']'
++ echo 'File list'
+File list
++ find . -type f -exec sh -c 'printf "%s %s \n" "$(ls -l $1)" "$(md5sum $1)"' '' '{}' '{}' ';'
+-rwxrwxrwx 1 appuser appuser 367099 Feb  3 17:27 ./submission/submission.csv.zip 833829770d5692dd31d62250cac1d41b  ./submission/submission.csv.zip 
+-rwxrwxrwx 1 appuser appuser 485 Mar  7 15:10 ./submission/log.txt b579e88b646f75412468f1dbe4073842  ./submission/log.txt 
+-rwxrwxrwx 1 appuser appuser 0 Feb 10 19:23 ./submission/.gitkeep d41d8cd98f00b204e9800998ecf8427e  ./submission/.gitkeep 
+-rwxrwxrwx 1 appuser appuser 1920 Mar  7 15:05 ./submission/submission.zip 0bb418ef4550ba213735e0577985d508  ./submission/submission.zip 
+-rw-rw-r-- 1 root root 5284 Feb 10 19:23 ./main.py c268db8d528462f67d6fbe50eac42ec4  ./main.py 
++ echo 'List installed packages'
+List installed packages
++ conda list -n nasa-airport-config-runtime
+# packages in environment at /srv/conda/envs/nasa-airport-config-runtime:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                 conda_forge    conda-forge
+_openmp_mutex             4.5                      1_llvm    conda-forge
+abseil-cpp                20210324.2           h9c3ff4c_0    conda-forge
+absl-py                   0.15.0             pyhd8ed1ab_0    conda-forge
+aiohttp                   3.8.1            py39h3811e60_0    conda-forge
+aiosignal                 1.2.0              pyhd8ed1ab_0    conda-forge
+alsa-lib                  1.2.3                h516909a_0    conda-forge
+astunparse                1.6.3              pyhd8ed1ab_0    conda-forge
+async-timeout             4.0.2              pyhd8ed1ab_0    conda-forge
+attrs                     21.4.0             pyhd8ed1ab_0    conda-forge
+beautifulsoup4            4.10.0             pyha770c72_0    conda-forge
+blas                      2.112                       mkl    conda-forge
+blas-devel                3.9.0            12_linux64_mkl    conda-forge
+blinker                   1.4                        py_1    conda-forge
+blosc                     1.21.0               h9c3ff4c_0    conda-forge
+brotli                    1.0.9                h7f98852_6    conda-forge
+brotli-bin                1.0.9                h7f98852_6    conda-forge
+brotlipy                  0.7.0           py39h3811e60_1003    conda-forge
+brunsli                   0.1                  h9c3ff4c_0    conda-forge
+bzip2                     1.0.8                h7f98852_4    conda-forge
+c-ares                    1.18.1               h7f98852_0    conda-forge
+c-blosc2                  2.0.4                h5f21a17_1    conda-forge
+ca-certificates           2021.10.8            ha878542_0    conda-forge
+cached-property           1.5.2                hd8ed1ab_1    conda-forge
+cached_property           1.5.2              pyha770c72_1    conda-forge
+cachetools                4.2.4              pyhd8ed1ab_0    conda-forge
+catalogue                 2.0.6            py39hf3d152e_1    conda-forge
+catboost                  1.0.3            py39hf3d152e_1    conda-forge
+certifi                   2021.10.8        py39hf3d152e_1    conda-forge
+cffi                      1.15.0           py39h4bc2ebd_0    conda-forge
+cfitsio                   4.0.0                h9a35b8e_0    conda-forge
+charls                    2.2.0                h9c3ff4c_0    conda-forge
+charset-normalizer        2.0.11             pyhd8ed1ab_0    conda-forge
+click                     8.0.3            py39hf3d152e_1    conda-forge
+cloudpickle               2.0.0              pyhd8ed1ab_0    conda-forge
+colorama                  0.4.4              pyh9f0ad1d_0    conda-forge
+cryptography              36.0.1           py39h95dcef6_0    conda-forge
+cudatoolkit               11.3.1               ha36c431_9    nvidia
+cudnn                     8.2.1.32             h86fa8c9_0    conda-forge
+cycler                    0.11.0             pyhd8ed1ab_0    conda-forge
+cymem                     2.0.6            py39he80948d_2    conda-forge
+cython-blis               0.7.5            py39hce5d2b2_1    conda-forge
+cytoolz                   0.11.2           py39h3811e60_1    conda-forge
+dask-core                 2022.1.1           pyhd8ed1ab_0    conda-forge
+dataclasses               0.8                pyhc8e2a94_3    conda-forge
+dbus                      1.13.6               h5008d03_3    conda-forge
+docopt                    0.6.2                      py_1    conda-forge
+docstring-parser          0.13                     pypi_0    pypi
+efficientnet-pytorch      0.6.3                    pypi_0    pypi
+expat                     2.4.4                h9c3ff4c_0    conda-forge
+fastai                    2.5.3                      py_0    fastai
+fastcore                  1.3.26                     py_0    fastai
+fastdownload              0.0.5                      py_0    fastai
+fastprogress              1.0.0              pyh39e3cac_0    fastai
+ffmpeg                    4.3                  hf484d3e_0    pytorch
+flask                     2.0.2              pyhd8ed1ab_0    conda-forge
+font-ttf-dejavu-sans-mono 2.37                 hab24e00_0    conda-forge
+font-ttf-inconsolata      3.000                h77eed37_0    conda-forge
+font-ttf-source-code-pro  2.038                h77eed37_0    conda-forge
+font-ttf-ubuntu           0.83                 hab24e00_0    conda-forge
+fontconfig                2.13.96              ha180cfb_0    conda-forge
+fonts-conda-ecosystem     1                             0    conda-forge
+fonts-conda-forge         1                             0    conda-forge
+fonttools                 4.29.1           py39h3811e60_0    conda-forge
+freetype                  2.10.4               h0708190_1    conda-forge
+frozenlist                1.3.0            py39h3811e60_0    conda-forge
+fsspec                    2022.1.0           pyhd8ed1ab_0    conda-forge
+future                    0.18.2           py39hf3d152e_4    conda-forge
+gast                      0.4.0              pyh9f0ad1d_0    conda-forge
+geos                      3.10.2               h9c3ff4c_0    conda-forge
+gettext                   0.19.8.1          h73d1719_1008    conda-forge
+giflib                    5.2.1                h36c2ea0_2    conda-forge
+gmp                       6.2.1                h58526e2_0    conda-forge
+gnutls                    3.6.13               h85f3911_1    conda-forge
+google-auth               1.35.0             pyh6c4a22f_0    conda-forge
+google-auth-oauthlib      0.4.6              pyhd8ed1ab_0    conda-forge
+google-pasta              0.2.0              pyh8c360ce_0    conda-forge
+grpc-cpp                  1.41.1               h75e9d12_2    conda-forge
+grpcio                    1.41.1           py39hff7568b_1    conda-forge
+gst-plugins-base          1.18.5               hf529b03_3    conda-forge
+gstreamer                 1.18.5               h9f60fe5_3    conda-forge
+h5py                      3.1.0           nompi_py39h25020de_100    conda-forge
+hdf5                      1.10.6          nompi_h6a2412b_1114    conda-forge
+icu                       69.1                 h9c3ff4c_0    conda-forge
+idna                      3.3                pyhd8ed1ab_0    conda-forge
+imagecodecs               2021.11.20       py39h571908b_1    conda-forge
+imageio                   2.13.3             pyh239f2a4_0    conda-forge
+importlib-metadata        4.10.1           py39hf3d152e_0    conda-forge
+iniconfig                 1.1.1              pyh9f0ad1d_0    conda-forge
+itsdangerous              2.0.1              pyhd8ed1ab_0    conda-forge
+jbig                      2.1               h7f98852_2003    conda-forge
+jinja2                    3.0.3              pyhd8ed1ab_0    conda-forge
+joblib                    1.1.0              pyhd8ed1ab_0    conda-forge
+jpeg                      9e                   h7f98852_0    conda-forge
+jsonargparse              4.2.0                    pypi_0    pypi
+jxrlib                    1.1                  h7f98852_2    conda-forge
+keras                     2.6.0              pyhd8ed1ab_1    conda-forge
+keras-preprocessing       1.1.2              pyhd8ed1ab_0    conda-forge
+kiwisolver                1.3.2            py39h1a9c180_1    conda-forge
+kornia                    0.5.3                    pypi_0    pypi
+krb5                      1.19.2               hcc1bbae_3    conda-forge
+lame                      3.100             h7f98852_1001    conda-forge
+langcodes                 3.3.0              pyhd8ed1ab_0    conda-forge
+lcms2                     2.12                 hddcbb42_0    conda-forge
+ld_impl_linux-64          2.36.1               hea4e1c9_2    conda-forge
+lerc                      3.0                  h9c3ff4c_0    conda-forge
+libaec                    1.0.6                h9c3ff4c_0    conda-forge
+libblas                   3.9.0            12_linux64_mkl    conda-forge
+libbrotlicommon           1.0.9                h7f98852_6    conda-forge
+libbrotlidec              1.0.9                h7f98852_6    conda-forge
+libbrotlienc              1.0.9                h7f98852_6    conda-forge
+libcblas                  3.9.0            12_linux64_mkl    conda-forge
+libclang                  13.0.1          default_hc23dcda_0    conda-forge
+libcurl                   7.81.0               h2574ce0_0    conda-forge
+libdeflate                1.8                  h7f98852_0    conda-forge
+libedit                   3.1.20191231         he28a2e2_2    conda-forge
+libev                     4.33                 h516909a_1    conda-forge
+libevent                  2.1.10               h9b69904_4    conda-forge
+libffi                    3.4.2                h7f98852_5    conda-forge
+libgcc-ng                 11.2.0              h1d223b6_12    conda-forge
+libgfortran-ng            11.2.0              h69a702a_12    conda-forge
+libgfortran5              11.2.0              h5c6108e_12    conda-forge
+libglib                   2.70.2               h174f98d_2    conda-forge
+libiconv                  1.16                 h516909a_0    conda-forge
+liblapack                 3.9.0            12_linux64_mkl    conda-forge
+liblapacke                3.9.0            12_linux64_mkl    conda-forge
+libllvm11                 11.1.0               hf817b99_2    conda-forge
+libllvm13                 13.0.1               hf817b99_0    conda-forge
+libnghttp2                1.46.0               h812cca2_0    conda-forge
+libogg                    1.3.4                h7f98852_1    conda-forge
+libopus                   1.3.1                h7f98852_1    conda-forge
+libpng                    1.6.37               h21135ba_2    conda-forge
+libpq                     14.1                 hd57d9b9_1    conda-forge
+libprotobuf               3.18.1               h780b84a_0    conda-forge
+libssh2                   1.10.0               ha56f1ee_2    conda-forge
+libstdcxx-ng              11.2.0              he4da1e4_12    conda-forge
+libtiff                   4.3.0                h6f004c6_2    conda-forge
+libuuid                   2.32.1            h7f98852_1000    conda-forge
+libuv                     1.43.0               h7f98852_0    conda-forge
+libvorbis                 1.3.7                h9c3ff4c_0    conda-forge
+libwebp-base              1.2.2                h7f98852_1    conda-forge
+libxcb                    1.13              h7f98852_1004    conda-forge
+libxkbcommon              1.0.3                he3ba5ed_0    conda-forge
+libxml2                   2.9.12               h885dcf4_1    conda-forge
+libzlib                   1.2.11            h36c2ea0_1013    conda-forge
+libzopfli                 1.0.3                h9c3ff4c_0    conda-forge
+lightning-bolts           0.5.0                    pypi_0    pypi
+lightning-flash           0.6.0                    pypi_0    pypi
+llvm-openmp               13.0.1               hf817b99_0    conda-forge
+llvmlite                  0.37.0           py39h1bbdace_1    conda-forge
+locket                    0.2.0                      py_2    conda-forge
+loguru                    0.5.3            py39hf3d152e_3    conda-forge
+lz4-c                     1.9.3                h9c3ff4c_1    conda-forge
+markdown                  3.3.6              pyhd8ed1ab_0    conda-forge
+markupsafe                2.0.1            py39h3811e60_1    conda-forge
+matplotlib                3.5.1            py39hf3d152e_0    conda-forge
+matplotlib-base           3.5.1            py39h2fa2bec_0    conda-forge
+mkl                       2021.4.0           h8d4b97c_729    conda-forge
+mkl-devel                 2021.4.0           ha770c72_730    conda-forge
+mkl-include               2021.4.0           h8d4b97c_729    conda-forge
+multidict                 6.0.2            py39h3811e60_0    conda-forge
+munch                     2.5.0                    pypi_0    pypi
+munkres                   1.1.4              pyh9f0ad1d_0    conda-forge
+murmurhash                1.0.6            py39he80948d_2    conda-forge
+mysql-common              8.0.28               ha770c72_0    conda-forge
+mysql-libs                8.0.28               hfa10184_0    conda-forge
+nccl                      2.11.4.1             h5c60f85_2    conda-forge
+ncurses                   6.3                  h9c3ff4c_0    conda-forge
+nettle                    3.6                  he412f7d_0    conda-forge
+networkx                  2.6.3              pyhd8ed1ab_1    conda-forge
+nspr                      4.32                 h9c3ff4c_1    conda-forge
+nss                       3.74                 hb5efdd6_0    conda-forge
+numba                     0.54.1           py39h56b8d98_0    conda-forge
+numpy                     1.19.5           py39hdbf815f_2    conda-forge
+oauthlib                  3.2.0              pyhd8ed1ab_0    conda-forge
+olefile                   0.46               pyh9f0ad1d_1    conda-forge
+openh264                  2.1.1                h780b84a_0    conda-forge
+openjpeg                  2.4.0                hb52868f_1    conda-forge
+openssl                   1.1.1l               h7f98852_0    conda-forge
+opt_einsum                3.3.0              pyhd8ed1ab_1    conda-forge
+packaging                 21.3               pyhd8ed1ab_0    conda-forge
+pandas                    1.3.5            py39hde0f152_0    conda-forge
+partd                     1.2.0              pyhd8ed1ab_0    conda-forge
+pathy                     0.6.1              pyhd8ed1ab_0    conda-forge
+pcre                      8.45                 h9c3ff4c_0    conda-forge
+pillow                    8.4.0            py39ha612740_0    conda-forge
+pip                       21.3.1             pyhd8ed1ab_0    conda-forge
+pluggy                    1.0.0            py39hf3d152e_2    conda-forge
+preshed                   3.0.6            py39he80948d_1    conda-forge
+pretrainedmodels          0.7.4                    pypi_0    pypi
+protobuf                  3.18.1           py39he80948d_0    conda-forge
+pthread-stubs             0.4               h36c2ea0_1001    conda-forge
+py                        1.11.0             pyh6c4a22f_0    conda-forge
+pyasn1                    0.4.8                      py_0    conda-forge
+pyasn1-modules            0.2.7                      py_0    conda-forge
+pycparser                 2.21               pyhd8ed1ab_0    conda-forge
+pydantic                  1.8.2            py39h3811e60_2    conda-forge
+pydap                     3.2.2           pyh9f0ad1d_1001    conda-forge
+pydeprecate               0.3.1              pyhd8ed1ab_0    conda-forge
+pyjwt                     2.3.0              pyhd8ed1ab_1    conda-forge
+pyopenssl                 22.0.0             pyhd8ed1ab_0    conda-forge
+pyparsing                 3.0.7              pyhd8ed1ab_0    conda-forge
+pyqt                      5.12.3           py39hf3d152e_8    conda-forge
+pyqt-impl                 5.12.3           py39hde8b62d_8    conda-forge
+pyqt5-sip                 4.19.18          py39he80948d_8    conda-forge
+pyqtchart                 5.12             py39h0fcd23e_8    conda-forge
+pyqtwebengine             5.12.1           py39h0fcd23e_8    conda-forge
+pysocks                   1.7.1            py39hf3d152e_4    conda-forge
+pystiche                  1.0.1                    pypi_0    pypi
+pytest                    6.2.5            py39hf3d152e_2    conda-forge
+python                    3.9.7           hb7a2778_3_cpython    conda-forge
+python-dateutil           2.8.2              pyhd8ed1ab_0    conda-forge
+python-flatbuffers        1.12               pyhd8ed1ab_1    conda-forge
+python_abi                3.9                      2_cp39    conda-forge
+pytorch                   1.10.0          py3.9_cuda11.3_cudnn8.2.0_0    pytorch
+pytorch-lightning         1.5.5              pyhd8ed1ab_0    conda-forge
+pytorch-mutex             1.0                        cuda    pytorch
+pytz                      2021.3             pyhd8ed1ab_0    conda-forge
+pyu2f                     0.1.5              pyhd8ed1ab_0    conda-forge
+pywavelets                1.2.0            py39hce5d2b2_1    conda-forge
+pyyaml                    6.0              py39h3811e60_3    conda-forge
+qt                        5.12.9               ha98a1a1_5    conda-forge
+re2                       2021.11.01           h9c3ff4c_0    conda-forge
+readline                  8.1                  h46c0cb4_0    conda-forge
+requests                  2.27.1             pyhd8ed1ab_0    conda-forge
+requests-oauthlib         1.3.1              pyhd8ed1ab_0    conda-forge
+rsa                       4.8                pyhd8ed1ab_0    conda-forge
+scikit-image              0.19.0           py39hde0f152_0    conda-forge
+scikit-learn              1.0.1            py39h4dfa638_3    conda-forge
+scipy                     1.7.3            py39hee8e79c_0    conda-forge
+segmentation-models-pytorch 0.2.1                    pypi_0    pypi
+setuptools                59.8.0           py39hf3d152e_0    conda-forge
+shapely                   1.8.0            py39ha65c37e_5    conda-forge
+shellingham               1.4.0              pyh44b312d_0    conda-forge
+six                       1.15.0             pyh9f0ad1d_0    conda-forge
+smart_open                5.2.1              pyhd8ed1ab_0    conda-forge
+snappy                    1.1.8                he1b5a44_3    conda-forge
+soupsieve                 2.3.1              pyhd8ed1ab_0    conda-forge
+spacy                     3.2.1            py39h5472131_1    conda-forge
+spacy-legacy              3.0.8              pyhd8ed1ab_0    conda-forge
+spacy-loggers             1.0.1              pyhd8ed1ab_0    conda-forge
+sqlite                    3.37.0               h9cd32fc_0    conda-forge
+srsly                     2.4.2            py39he80948d_1    conda-forge
+tbb                       2021.5.0             h4bd325d_0    conda-forge
+tensorboard               2.6.0              pyhd8ed1ab_1    conda-forge
+tensorboard-data-server   0.6.0            py39h95dcef6_1    conda-forge
+tensorboard-plugin-wit    1.8.1              pyhd8ed1ab_0    conda-forge
+tensorflow                2.6.2           cuda112py39h9333c2f_1    conda-forge
+tensorflow-base           2.6.2           cuda112py39he9472f8_1    conda-forge
+tensorflow-estimator      2.6.2           cuda112py39h9333c2f_1    conda-forge
+tensorflow-gpu            2.6.2           cuda112py39h0bbbad9_1    conda-forge
+termcolor                 1.1.0                      py_2    conda-forge
+thinc                     8.0.13           py39h5472131_0    conda-forge
+threadpoolctl             3.1.0              pyh8a188c0_0    conda-forge
+tifffile                  2022.2.2           pyhd8ed1ab_0    conda-forge
+timm                      0.4.12                     py_0    fastai
+tk                        8.6.11               h27826a3_1    conda-forge
+toml                      0.10.2             pyhd8ed1ab_0    conda-forge
+toolz                     0.11.2             pyhd8ed1ab_0    conda-forge
+torchmetrics              0.7.1              pyhd8ed1ab_0    conda-forge
+torchvision               0.11.1               py39_cu113    pytorch
+tornado                   6.1              py39h3811e60_2    conda-forge
+tqdm                      4.62.3             pyhd8ed1ab_0    conda-forge
+typer                     0.4.0              pyhd8ed1ab_0    conda-forge
+typing-extensions         3.7.4.3                       0    conda-forge
+typing_extensions         3.7.4.3                    py_0    conda-forge
+tzdata                    2021e                he74cb21_0    conda-forge
+unicodedata2              14.0.0           py39h3811e60_0    conda-forge
+urllib3                   1.26.8             pyhd8ed1ab_1    conda-forge
+wasabi                    0.9.0              pyhd8ed1ab_0    conda-forge
+webob                     1.8.7              pyhd8ed1ab_0    conda-forge
+werkzeug                  2.0.3              pyhd8ed1ab_1    conda-forge
+wheel                     0.37.1             pyhd8ed1ab_0    conda-forge
+wrapt                     1.12.1           py39h3811e60_3    conda-forge
+xorg-libxau               1.0.9                h7f98852_0    conda-forge
+xorg-libxdmcp             1.1.3                h7f98852_0    conda-forge
+xz                        5.2.5                h516909a_1    conda-forge
+yaml                      0.2.5                h7f98852_2    conda-forge
+yarl                      1.7.2            py39h3811e60_1    conda-forge
+zfp                       0.5.5                h9c3ff4c_8    conda-forge
+zipp                      3.7.0              pyhd8ed1ab_1    conda-forge
+zlib                      1.2.11            h36c2ea0_1013    conda-forge
+zstd                      1.5.2                ha95c52a_0    conda-forge
++ echo 'Copying data from the cloud to local disk'
+Copying data from the cloud to local disk
++ cp -r /clouddata /data
++ find /data -type d -exec chmod 700 '{}' ';'
++ find /data -type f -exec chmod 600 '{}' ';'
++ find /supervisor -type d -exec chmod 700 '{}' ';'
++ find /supervisor -type f -exec chmod 600 '{}' ';'
++ echo 'Extracting test features'
+Extracting test features
++ find /data -name '*.csv.bz2' -exec parallel -I% bunzip2 % ::: '{}' +
++ cp /data/submission_format.csv /codeexecution
++ chmod 644 /codeexecution/submission_format.csv
++ echo 'Creating prediction time file'
+Creating prediction time file
++ tail -n +2 /data/submission_format.csv
++ cut -d , -f2
++ sort
++ uniq
+++ wc -l
++ echo 'Evaluating 34 time points'
+Evaluating 34 time points
++ head /data/prediction_times.txt
+2021-10-16T01:00:00
+2021-10-16T02:00:00
+2021-10-16T03:00:00
+2021-10-16T04:00:00
+2021-10-16T05:00:00
+2021-10-16T06:00:00
+2021-10-16T07:00:00
+2021-10-16T08:00:00
+2021-10-16T09:00:00
+2021-10-16T10:00:00
++ echo 'Available disk'
+Available disk
++ df -h /codeexecution
+Filesystem      Size  Used Avail Use% Mounted on
+overlay         914G  544G  324G  63% /
++ echo 'Running submission with Python'
+Running submission with Python
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T01:00:00
+2022-03-07 15:11:04.048 | INFO     | __main__:main:64 - Generating data extracts from 2021-10-16 01:00:00 to 2021-10-17 00:00:00.
+2022-03-07 15:11:04.048 | DEBUG    | __main__:main:65 - Deleting extract cache.
+  0%|          | 0/122 [00:00<?, ?it/s]  1%|          | 1/122 [00:00<00:40,  2.96it/s] 99%|█████████▉| 121/122 [00:02<00:00, 60.31it/s]100%|██████████| 122/122 [00:02<00:00, 58.02it/s]
+2022-03-07 15:11:06.249 | INFO     | __main__:main:82 - Created extracts for 24 prediction times in 2.20 seconds (0.09 seconds per prediction time).
+2022-03-07 15:11:06.249 | DEBUG    | __main__:main:90 - Updating permissions
++ find /extracts/2021-10-16T01:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T01:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T01:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T01:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:07.144 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 01:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 98%|█████████▊| 117/120 [00:00<00:00, 1166.84it/s]100%|██████████| 120/120 [00:00<00:00, 1165.51it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T01:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T01:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T02:00:00
+2022-03-07 15:11:08.709 | DEBUG    | __main__:main:57 - Features for 2021-10-16T02:00:00 exist in extract cache.
++ find /extracts/2021-10-16T02:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T02:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T02:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T02:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:09.540 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 02:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 16%|█▌        | 19/120 [00:00<00:00, 182.60it/s] 33%|███▎      | 40/120 [00:00<00:00, 195.08it/s] 50%|█████     | 60/120 [00:00<00:00, 194.10it/s] 68%|██████▊   | 81/120 [00:00<00:00, 198.17it/s] 85%|████████▌ | 102/120 [00:00<00:00, 201.77it/s]100%|██████████| 120/120 [00:00<00:00, 199.75it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T02:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T02:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T03:00:00
+2022-03-07 15:11:11.575 | DEBUG    | __main__:main:57 - Features for 2021-10-16T03:00:00 exist in extract cache.
++ find /extracts/2021-10-16T03:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T03:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T03:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T03:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:12.372 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 03:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 17%|█▋        | 20/120 [00:00<00:00, 192.86it/s] 33%|███▎      | 40/120 [00:00<00:00, 195.24it/s] 51%|█████     | 61/120 [00:00<00:00, 197.98it/s] 68%|██████▊   | 82/120 [00:00<00:00, 200.79it/s] 86%|████████▌ | 103/120 [00:00<00:00, 202.03it/s]100%|██████████| 120/120 [00:00<00:00, 200.30it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T03:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T03:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T04:00:00
+2022-03-07 15:11:14.417 | DEBUG    | __main__:main:57 - Features for 2021-10-16T04:00:00 exist in extract cache.
++ find /extracts/2021-10-16T04:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T04:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T04:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T04:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:15.221 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 04:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 15%|█▌        | 18/120 [00:00<00:00, 179.51it/s] 31%|███       | 37/120 [00:00<00:00, 184.51it/s] 48%|████▊     | 57/120 [00:00<00:00, 187.70it/s] 63%|██████▎   | 76/120 [00:00<00:00, 187.53it/s] 80%|████████  | 96/120 [00:00<00:00, 189.31it/s] 97%|█████████▋| 116/120 [00:00<00:00, 191.83it/s]100%|██████████| 120/120 [00:00<00:00, 189.36it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T04:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T04:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T05:00:00
+2022-03-07 15:11:17.278 | DEBUG    | __main__:main:57 - Features for 2021-10-16T05:00:00 exist in extract cache.
++ find /extracts/2021-10-16T05:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T05:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T05:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T05:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:18.087 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 05:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 16%|█▌        | 19/120 [00:00<00:00, 188.48it/s] 33%|███▎      | 40/120 [00:00<00:00, 199.26it/s] 50%|█████     | 60/120 [00:00<00:00, 194.00it/s] 67%|██████▋   | 80/120 [00:00<00:00, 193.03it/s] 83%|████████▎ | 100/120 [00:00<00:00, 191.31it/s]100%|██████████| 120/120 [00:00<00:00, 190.64it/s]100%|██████████| 120/120 [00:00<00:00, 191.95it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T05:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T05:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T06:00:00
+2022-03-07 15:11:20.145 | DEBUG    | __main__:main:57 - Features for 2021-10-16T06:00:00 exist in extract cache.
++ find /extracts/2021-10-16T06:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T06:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T06:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T06:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:20.944 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 06:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 17%|█▋        | 20/120 [00:00<00:00, 192.22it/s] 34%|███▍      | 41/120 [00:00<00:00, 196.95it/s] 52%|█████▏    | 62/120 [00:00<00:00, 200.18it/s] 69%|██████▉   | 83/120 [00:00<00:00, 201.78it/s] 87%|████████▋ | 104/120 [00:00<00:00, 200.85it/s]100%|██████████| 120/120 [00:00<00:00, 199.86it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T06:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T06:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T07:00:00
+2022-03-07 15:11:22.965 | DEBUG    | __main__:main:57 - Features for 2021-10-16T07:00:00 exist in extract cache.
++ find /extracts/2021-10-16T07:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T07:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T07:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T07:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:23.752 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 07:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 16%|█▌        | 19/120 [00:00<00:00, 181.18it/s] 32%|███▎      | 39/120 [00:00<00:00, 189.60it/s] 49%|████▉     | 59/120 [00:00<00:00, 191.49it/s] 66%|██████▌   | 79/120 [00:00<00:00, 192.97it/s] 82%|████████▎ | 99/120 [00:00<00:00, 194.00it/s] 99%|█████████▉| 119/120 [00:00<00:00, 194.66it/s]100%|██████████| 120/120 [00:00<00:00, 192.87it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T07:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T07:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T08:00:00
+2022-03-07 15:11:25.820 | DEBUG    | __main__:main:57 - Features for 2021-10-16T08:00:00 exist in extract cache.
++ find /extracts/2021-10-16T08:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T08:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T08:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T08:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:26.620 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 08:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 17%|█▋        | 20/120 [00:00<00:00, 197.29it/s] 34%|███▍      | 41/120 [00:00<00:00, 202.65it/s] 52%|█████▏    | 62/120 [00:00<00:00, 204.23it/s] 69%|██████▉   | 83/120 [00:00<00:00, 204.84it/s] 88%|████████▊ | 105/120 [00:00<00:00, 207.37it/s]100%|██████████| 120/120 [00:00<00:00, 205.26it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T08:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T08:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T09:00:00
+2022-03-07 15:11:28.610 | DEBUG    | __main__:main:57 - Features for 2021-10-16T09:00:00 exist in extract cache.
++ find /extracts/2021-10-16T09:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T09:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T09:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T09:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:29.412 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 09:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 17%|█▋        | 20/120 [00:00<00:00, 192.29it/s] 33%|███▎      | 40/120 [00:00<00:00, 196.38it/s] 51%|█████     | 61/120 [00:00<00:00, 200.45it/s] 68%|██████▊   | 82/120 [00:00<00:00, 202.16it/s] 86%|████████▌ | 103/120 [00:00<00:00, 202.73it/s]100%|██████████| 120/120 [00:00<00:00, 201.56it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T09:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T09:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T10:00:00
+2022-03-07 15:11:31.438 | DEBUG    | __main__:main:57 - Features for 2021-10-16T10:00:00 exist in extract cache.
++ find /extracts/2021-10-16T10:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T10:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T10:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T10:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:32.241 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 10:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 14%|█▍        | 17/120 [00:00<00:00, 165.77it/s] 30%|███       | 36/120 [00:00<00:00, 177.90it/s] 46%|████▌     | 55/120 [00:00<00:00, 181.85it/s] 62%|██████▏   | 74/120 [00:00<00:00, 182.56it/s] 78%|███████▊  | 93/120 [00:00<00:00, 184.94it/s] 94%|█████████▍| 113/120 [00:00<00:00, 186.92it/s]100%|██████████| 120/120 [00:00<00:00, 183.86it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T10:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T10:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T11:00:00
+2022-03-07 15:11:34.339 | DEBUG    | __main__:main:57 - Features for 2021-10-16T11:00:00 exist in extract cache.
++ find /extracts/2021-10-16T11:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T11:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T11:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T11:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:35.157 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 11:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 17%|█▋        | 20/120 [00:00<00:00, 195.97it/s] 34%|███▍      | 41/120 [00:00<00:00, 200.72it/s] 52%|█████▏    | 62/120 [00:00<00:00, 202.48it/s] 69%|██████▉   | 83/120 [00:00<00:00, 201.14it/s] 87%|████████▋ | 104/120 [00:00<00:00, 201.38it/s]100%|██████████| 120/120 [00:00<00:00, 198.01it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T11:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T11:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T12:00:00
+2022-03-07 15:11:37.183 | DEBUG    | __main__:main:57 - Features for 2021-10-16T12:00:00 exist in extract cache.
++ find /extracts/2021-10-16T12:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T12:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T12:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T12:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:37.987 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 12:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 17%|█▋        | 20/120 [00:00<00:00, 191.81it/s] 33%|███▎      | 40/120 [00:00<00:00, 196.43it/s] 51%|█████     | 61/120 [00:00<00:00, 199.22it/s] 68%|██████▊   | 82/120 [00:00<00:00, 200.05it/s] 86%|████████▌ | 103/120 [00:00<00:00, 202.32it/s]100%|██████████| 120/120 [00:00<00:00, 200.58it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T12:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T12:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T13:00:00
+2022-03-07 15:11:40.011 | DEBUG    | __main__:main:57 - Features for 2021-10-16T13:00:00 exist in extract cache.
++ find /extracts/2021-10-16T13:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T13:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T13:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T13:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:40.833 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 13:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 15%|█▌        | 18/120 [00:00<00:00, 174.22it/s] 31%|███       | 37/120 [00:00<00:00, 182.17it/s] 48%|████▊     | 57/120 [00:00<00:00, 189.18it/s] 65%|██████▌   | 78/120 [00:00<00:00, 195.92it/s] 82%|████████▎ | 99/120 [00:00<00:00, 198.41it/s]100%|██████████| 120/120 [00:00<00:00, 200.16it/s]100%|██████████| 120/120 [00:00<00:00, 195.30it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T13:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T13:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T14:00:00
+2022-03-07 15:11:42.861 | DEBUG    | __main__:main:57 - Features for 2021-10-16T14:00:00 exist in extract cache.
++ find /extracts/2021-10-16T14:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T14:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T14:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T14:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:43.720 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 14:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 16%|█▌        | 19/120 [00:00<00:00, 189.34it/s] 32%|███▏      | 38/120 [00:00<00:00, 189.24it/s] 48%|████▊     | 58/120 [00:00<00:00, 189.69it/s] 65%|██████▌   | 78/120 [00:00<00:00, 193.44it/s] 82%|████████▎ | 99/120 [00:00<00:00, 197.67it/s]100%|██████████| 120/120 [00:00<00:00, 200.56it/s]100%|██████████| 120/120 [00:00<00:00, 196.50it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T14:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T14:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T15:00:00
+2022-03-07 15:11:45.743 | DEBUG    | __main__:main:57 - Features for 2021-10-16T15:00:00 exist in extract cache.
++ find /extracts/2021-10-16T15:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T15:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T15:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T15:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:46.577 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 15:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 15%|█▌        | 18/120 [00:00<00:00, 176.44it/s] 32%|███▏      | 38/120 [00:00<00:00, 185.16it/s] 48%|████▊     | 57/120 [00:00<00:00, 185.91it/s] 64%|██████▍   | 77/120 [00:00<00:00, 190.34it/s] 81%|████████  | 97/120 [00:00<00:00, 190.25it/s] 98%|█████████▊| 117/120 [00:00<00:00, 192.50it/s]100%|██████████| 120/120 [00:00<00:00, 189.81it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T15:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T15:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T16:00:00
+2022-03-07 15:11:48.736 | DEBUG    | __main__:main:57 - Features for 2021-10-16T16:00:00 exist in extract cache.
++ find /extracts/2021-10-16T16:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T16:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T16:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T16:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:49.610 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 16:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 16%|█▌        | 19/120 [00:00<00:00, 189.34it/s] 32%|███▏      | 38/120 [00:00<00:00, 189.63it/s] 48%|████▊     | 58/120 [00:00<00:00, 191.34it/s] 65%|██████▌   | 78/120 [00:00<00:00, 190.30it/s] 82%|████████▏ | 98/120 [00:00<00:00, 192.20it/s] 98%|█████████▊| 118/120 [00:00<00:00, 192.93it/s]100%|██████████| 120/120 [00:00<00:00, 191.29it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T16:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T16:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T17:00:00
+2022-03-07 15:11:51.767 | DEBUG    | __main__:main:57 - Features for 2021-10-16T17:00:00 exist in extract cache.
++ find /extracts/2021-10-16T17:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T17:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T17:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T17:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:52.629 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 17:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 17%|█▋        | 20/120 [00:00<00:00, 189.31it/s] 32%|███▎      | 39/120 [00:00<00:00, 154.32it/s] 46%|████▌     | 55/120 [00:00<00:00, 139.88it/s] 58%|█████▊    | 70/120 [00:00<00:00, 136.25it/s] 73%|███████▎  | 88/120 [00:00<00:00, 149.77it/s] 87%|████████▋ | 104/120 [00:00<00:00, 152.20it/s]100%|██████████| 120/120 [00:00<00:00, 151.31it/s]100%|██████████| 120/120 [00:00<00:00, 149.99it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T17:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T17:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T18:00:00
+2022-03-07 15:11:55.007 | DEBUG    | __main__:main:57 - Features for 2021-10-16T18:00:00 exist in extract cache.
++ find /extracts/2021-10-16T18:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T18:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T18:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T18:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:55.956 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 18:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 13%|█▎        | 16/120 [00:00<00:00, 150.79it/s] 28%|██▊       | 33/120 [00:00<00:00, 156.73it/s] 43%|████▎     | 52/120 [00:00<00:00, 167.57it/s] 57%|█████▊    | 69/120 [00:00<00:00, 164.15it/s] 72%|███████▏  | 86/120 [00:00<00:00, 162.53it/s] 86%|████████▌ | 103/120 [00:00<00:00, 160.36it/s]100%|██████████| 120/120 [00:00<00:00, 162.31it/s]100%|██████████| 120/120 [00:00<00:00, 161.84it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T18:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T18:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T19:00:00
+2022-03-07 15:11:58.227 | DEBUG    | __main__:main:57 - Features for 2021-10-16T19:00:00 exist in extract cache.
++ find /extracts/2021-10-16T19:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T19:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T19:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T19:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:11:59.037 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 19:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 17%|█▋        | 20/120 [00:00<00:00, 189.89it/s] 32%|███▎      | 39/120 [00:00<00:00, 187.33it/s] 48%|████▊     | 58/120 [00:00<00:00, 188.48it/s] 65%|██████▌   | 78/120 [00:00<00:00, 189.62it/s] 81%|████████  | 97/120 [00:00<00:00, 187.47it/s] 98%|█████████▊| 117/120 [00:00<00:00, 189.71it/s]100%|██████████| 120/120 [00:00<00:00, 189.06it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T19:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T19:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T20:00:00
+2022-03-07 15:12:01.100 | DEBUG    | __main__:main:57 - Features for 2021-10-16T20:00:00 exist in extract cache.
++ find /extracts/2021-10-16T20:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T20:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T20:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T20:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:12:01.897 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 20:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 16%|█▌        | 19/120 [00:00<00:00, 185.52it/s] 32%|███▎      | 39/120 [00:00<00:00, 191.19it/s] 49%|████▉     | 59/120 [00:00<00:00, 190.45it/s] 66%|██████▌   | 79/120 [00:00<00:00, 190.88it/s] 82%|████████▎ | 99/120 [00:00<00:00, 187.84it/s] 98%|█████████▊| 118/120 [00:00<00:00, 187.61it/s]100%|██████████| 120/120 [00:00<00:00, 188.44it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T20:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T20:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T21:00:00
+2022-03-07 15:12:04.000 | DEBUG    | __main__:main:57 - Features for 2021-10-16T21:00:00 exist in extract cache.
++ find /extracts/2021-10-16T21:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T21:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T21:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T21:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:12:04.812 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 21:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 17%|█▋        | 20/120 [00:00<00:00, 197.51it/s] 34%|███▍      | 41/120 [00:00<00:00, 203.10it/s] 52%|█████▏    | 62/120 [00:00<00:00, 205.80it/s] 69%|██████▉   | 83/120 [00:00<00:00, 207.22it/s] 87%|████████▋ | 104/120 [00:00<00:00, 207.91it/s]100%|██████████| 120/120 [00:00<00:00, 206.70it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T21:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T21:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T22:00:00
+2022-03-07 15:12:06.859 | DEBUG    | __main__:main:57 - Features for 2021-10-16T22:00:00 exist in extract cache.
++ find /extracts/2021-10-16T22:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T22:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T22:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T22:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:12:07.695 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 22:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 16%|█▌        | 19/120 [00:00<00:00, 183.22it/s] 32%|███▏      | 38/120 [00:00<00:00, 184.41it/s] 48%|████▊     | 57/120 [00:00<00:00, 182.88it/s] 63%|██████▎   | 76/120 [00:00<00:00, 182.81it/s] 80%|████████  | 96/120 [00:00<00:00, 187.01it/s] 97%|█████████▋| 116/120 [00:00<00:00, 188.57it/s]100%|██████████| 120/120 [00:00<00:00, 186.73it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T22:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T22:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-16T23:00:00
+2022-03-07 15:12:09.816 | DEBUG    | __main__:main:57 - Features for 2021-10-16T23:00:00 exist in extract cache.
++ find /extracts/2021-10-16T23:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-16T23:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-16T23:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-16T23:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:12:10.681 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-16 23:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 16%|█▌        | 19/120 [00:00<00:00, 187.08it/s] 32%|███▎      | 39/120 [00:00<00:00, 192.74it/s] 49%|████▉     | 59/120 [00:00<00:00, 191.63it/s] 66%|██████▌   | 79/120 [00:00<00:00, 190.87it/s] 82%|████████▎ | 99/120 [00:00<00:00, 192.21it/s] 99%|█████████▉| 119/120 [00:00<00:00, 191.09it/s]100%|██████████| 120/120 [00:00<00:00, 190.98it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-16T23:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-16T23:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-17T00:00:00
+2022-03-07 15:12:12.737 | DEBUG    | __main__:main:57 - Features for 2021-10-17T00:00:00 exist in extract cache.
++ find /extracts/2021-10-17T00:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-17T00:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-17T00:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-17T00:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:12:13.562 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-17 00:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 16%|█▌        | 19/120 [00:00<00:00, 186.31it/s] 32%|███▎      | 39/120 [00:00<00:00, 189.79it/s] 50%|█████     | 60/120 [00:00<00:00, 194.76it/s] 68%|██████▊   | 81/120 [00:00<00:00, 197.98it/s] 84%|████████▍ | 101/120 [00:00<00:00, 191.65it/s]100%|██████████| 120/120 [00:00<00:00, 194.60it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-17T00:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-17T00:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-17T01:00:00
+2022-03-07 15:12:15.606 | INFO     | __main__:main:64 - Generating data extracts from 2021-10-17 01:00:00 to 2021-10-18 00:00:00.
+2022-03-07 15:12:15.606 | DEBUG    | __main__:main:65 - Deleting extract cache.
+  0%|          | 0/122 [00:00<?, ?it/s]  1%|          | 1/122 [00:00<00:34,  3.55it/s] 34%|███▎      | 41/122 [00:00<00:00, 123.53it/s] 99%|█████████▉| 121/122 [00:04<00:00, 25.18it/s]100%|██████████| 122/122 [00:04<00:00, 27.15it/s]
+2022-03-07 15:12:20.264 | INFO     | __main__:main:82 - Created extracts for 24 prediction times in 4.66 seconds (0.19 seconds per prediction time).
+2022-03-07 15:12:20.265 | DEBUG    | __main__:main:90 - Updating permissions
++ find /extracts/2021-10-17T01:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-17T01:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-17T01:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-17T01:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:12:21.151 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-17 01:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 14%|█▍        | 17/120 [00:00<00:00, 166.81it/s] 31%|███       | 37/120 [00:00<00:00, 185.26it/s] 48%|████▊     | 57/120 [00:00<00:00, 187.99it/s] 64%|██████▍   | 77/120 [00:00<00:00, 191.12it/s] 81%|████████  | 97/120 [00:00<00:00, 193.60it/s] 98%|█████████▊| 117/120 [00:00<00:00, 189.47it/s]100%|██████████| 120/120 [00:00<00:00, 188.86it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-17T01:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-17T01:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-17T02:00:00
+2022-03-07 15:12:23.270 | DEBUG    | __main__:main:57 - Features for 2021-10-17T02:00:00 exist in extract cache.
++ find /extracts/2021-10-17T02:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-17T02:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-17T02:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-17T02:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:12:24.064 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-17 02:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 16%|█▌        | 19/120 [00:00<00:00, 189.24it/s] 33%|███▎      | 40/120 [00:00<00:00, 196.46it/s] 51%|█████     | 61/120 [00:00<00:00, 201.97it/s] 68%|██████▊   | 82/120 [00:00<00:00, 201.57it/s] 86%|████████▌ | 103/120 [00:00<00:00, 198.92it/s]100%|██████████| 120/120 [00:00<00:00, 198.94it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-17T02:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-17T02:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-17T03:00:00
+2022-03-07 15:12:26.127 | DEBUG    | __main__:main:57 - Features for 2021-10-17T03:00:00 exist in extract cache.
++ find /extracts/2021-10-17T03:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-17T03:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-17T03:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-17T03:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:12:26.989 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-17 03:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 17%|█▋        | 20/120 [00:00<00:00, 195.35it/s] 34%|███▍      | 41/120 [00:00<00:00, 200.08it/s] 52%|█████▏    | 62/120 [00:00<00:00, 203.46it/s] 69%|██████▉   | 83/120 [00:00<00:00, 196.97it/s] 86%|████████▌ | 103/120 [00:00<00:00, 195.17it/s]100%|██████████| 120/120 [00:00<00:00, 196.38it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-17T03:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-17T03:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-17T04:00:00
+2022-03-07 15:12:29.032 | DEBUG    | __main__:main:57 - Features for 2021-10-17T04:00:00 exist in extract cache.
++ find /extracts/2021-10-17T04:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-17T04:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-17T04:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-17T04:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:12:29.837 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-17 04:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 16%|█▌        | 19/120 [00:00<00:00, 186.62it/s] 33%|███▎      | 40/120 [00:00<00:00, 194.72it/s] 50%|█████     | 60/120 [00:00<00:00, 195.13it/s] 67%|██████▋   | 80/120 [00:00<00:00, 196.40it/s] 83%|████████▎ | 100/120 [00:00<00:00, 196.50it/s]100%|██████████| 120/120 [00:00<00:00, 197.30it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-17T04:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-17T04:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-17T05:00:00
+2022-03-07 15:12:31.903 | DEBUG    | __main__:main:57 - Features for 2021-10-17T05:00:00 exist in extract cache.
++ find /extracts/2021-10-17T05:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-17T05:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-17T05:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-17T05:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:12:32.811 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-17 05:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 16%|█▌        | 19/120 [00:00<00:00, 187.18it/s] 32%|███▎      | 39/120 [00:00<00:00, 193.74it/s] 49%|████▉     | 59/120 [00:00<00:00, 196.44it/s] 67%|██████▋   | 80/120 [00:00<00:00, 198.16it/s] 83%|████████▎ | 100/120 [00:00<00:00, 198.04it/s]100%|██████████| 120/120 [00:00<00:00, 195.44it/s]100%|██████████| 120/120 [00:00<00:00, 195.64it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-17T05:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-17T05:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-17T06:00:00
+2022-03-07 15:12:34.930 | DEBUG    | __main__:main:57 - Features for 2021-10-17T06:00:00 exist in extract cache.
++ find /extracts/2021-10-17T06:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-17T06:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-17T06:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-17T06:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:12:35.775 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-17 06:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 16%|█▌        | 19/120 [00:00<00:00, 189.58it/s] 32%|███▎      | 39/120 [00:00<00:00, 195.27it/s] 49%|████▉     | 59/120 [00:00<00:00, 197.37it/s] 66%|██████▌   | 79/120 [00:00<00:00, 197.53it/s] 82%|████████▎ | 99/120 [00:00<00:00, 184.03it/s] 98%|█████████▊| 118/120 [00:00<00:00, 177.84it/s]100%|██████████| 120/120 [00:00<00:00, 182.74it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-17T06:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-17T06:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-17T07:00:00
+2022-03-07 15:12:37.977 | DEBUG    | __main__:main:57 - Features for 2021-10-17T07:00:00 exist in extract cache.
++ find /extracts/2021-10-17T07:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-17T07:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-17T07:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-17T07:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:12:38.837 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-17 07:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 14%|█▍        | 17/120 [00:00<00:00, 166.43it/s] 31%|███       | 37/120 [00:00<00:00, 184.99it/s] 48%|████▊     | 57/120 [00:00<00:00, 190.12it/s] 64%|██████▍   | 77/120 [00:00<00:00, 188.87it/s] 81%|████████  | 97/120 [00:00<00:00, 190.28it/s] 98%|█████████▊| 117/120 [00:00<00:00, 191.62it/s]100%|██████████| 120/120 [00:00<00:00, 189.25it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-17T07:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-17T07:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-17T08:00:00
+2022-03-07 15:12:40.916 | DEBUG    | __main__:main:57 - Features for 2021-10-17T08:00:00 exist in extract cache.
++ find /extracts/2021-10-17T08:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-17T08:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-17T08:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-17T08:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:12:41.716 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-17 08:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 17%|█▋        | 20/120 [00:00<00:00, 190.98it/s] 33%|███▎      | 40/120 [00:00<00:00, 195.22it/s] 50%|█████     | 60/120 [00:00<00:00, 194.28it/s] 67%|██████▋   | 80/120 [00:00<00:00, 190.49it/s] 83%|████████▎ | 100/120 [00:00<00:00, 190.52it/s]100%|██████████| 120/120 [00:00<00:00, 190.91it/s]100%|██████████| 120/120 [00:00<00:00, 191.47it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-17T08:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-17T08:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-17T09:00:00
+2022-03-07 15:12:43.768 | DEBUG    | __main__:main:57 - Features for 2021-10-17T09:00:00 exist in extract cache.
++ find /extracts/2021-10-17T09:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-17T09:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-17T09:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-17T09:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:12:44.590 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-17 09:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 16%|█▌        | 19/120 [00:00<00:00, 185.09it/s] 32%|███▏      | 38/120 [00:00<00:00, 186.80it/s] 48%|████▊     | 57/120 [00:00<00:00, 187.96it/s] 63%|██████▎   | 76/120 [00:00<00:00, 188.69it/s] 81%|████████  | 97/120 [00:00<00:00, 192.88it/s] 98%|█████████▊| 117/120 [00:00<00:00, 192.11it/s]100%|██████████| 120/120 [00:00<00:00, 190.24it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-17T09:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-17T09:00:00.csv
++ read prediction_time
++ conda run --no-capture-output -n nasa-airport-config-runtime python /supervisor/supervisor.py 2021-10-17T10:00:00
+2022-03-07 15:12:46.665 | DEBUG    | __main__:main:57 - Features for 2021-10-17T10:00:00 exist in extract cache.
++ find /extracts/2021-10-17T10:00:00 -type d -exec chmod 755 '{}' ';'
++ find /extracts/2021-10-17T10:00:00 -type f -exec chmod 644 '{}' ';'
++ ln -fns /extracts/2021-10-17T10:00:00 data
++ sudo -u appuser /srv/conda/bin/conda run --no-capture-output -n nasa-airport-config-runtime python main.py 2021-10-17T10:00:00
+sudo: unable to resolve host 184775e00bd5: Temporary failure in name resolution
+2022-03-07 15:12:47.476 | INFO     | __main__:main:120 - Computing my predictions for 2021-10-17 10:00:00
+katl
+kclt
+kden
+kdfw
+kjfk
+kmem
+kmia
+kord
+kphx
+ksea
+3,048 rows x 5 columns
+  0%|          | 0/120 [00:00<?, ?it/s] 17%|█▋        | 20/120 [00:00<00:00, 191.18it/s] 33%|███▎      | 40/120 [00:00<00:00, 194.45it/s] 50%|█████     | 60/120 [00:00<00:00, 194.17it/s] 67%|██████▋   | 80/120 [00:00<00:00, 189.68it/s] 83%|████████▎ | 100/120 [00:00<00:00, 190.14it/s]100%|██████████| 120/120 [00:00<00:00, 191.20it/s]100%|██████████| 120/120 [00:00<00:00, 191.39it/s]
++ echo 'Testing that prediction is valid'
+Testing that prediction is valid
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/check_prediction.py 2021-10-17T10:00:00
++ mv /codeexecution/prediction.csv /predictions/2021-10-17T10:00:00.csv
++ read prediction_time
++ echo 'Constructing submission from individual predictions'
+Constructing submission from individual predictions
++ conda run -n nasa-airport-config-runtime python /supervisor/scripts/construct_submission.py
++ echo 'Testing that submission is valid'
+Testing that submission is valid
++ conda run -n nasa-airport-config-runtime pytest /supervisor/scripts/test_submission.py
+============================= test session starts ==============================
+platform linux -- Python 3.9.7, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
+rootdir: /supervisor/scripts
+collected 1 item
+
+../supervisor/scripts/test_submission.py .                               [100%]
+
+============================== 1 passed in 0.33s ===============================
+
++ chown appuser:appuser submission/submission.csv
++ echo '================ END ================'
+================ END ================
++ cp /codeexecution/submission/log.txt /tmp/log
++ exit 0
